@@ -1,26 +1,57 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --color-midnight: #081528;
+  --color-deep-blue: #10233f;
+  --color-black: #050a12;
+  --color-gold: #d4a63a;
+  --color-gold-soft: #e8c76a;
+  --color-white: #f5f7fa;
+  --color-slate: #b8c4d6;
+  --color-border: #2a3a56;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-midnight: var(--color-midnight);
+  --color-deep-blue: var(--color-deep-blue);
+  --color-black: var(--color-black);
+  --color-gold: var(--color-gold);
+  --color-gold-soft: var(--color-gold-soft);
+  --color-white: var(--color-white);
+  --color-slate: var(--color-slate);
+  --color-border: var(--color-border);
+  --font-headline: var(--font-anton);
+  --font-body: var(--font-inter);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--color-midnight);
+  color: var(--color-white);
+  font-family: var(--font-inter), Inter, Montserrat, Arial, sans-serif;
+}
+
+h1, h2, h3, .font-headline {
+  font-family: var(--font-anton), Anton, Montserrat, Arial, sans-serif;
+  letter-spacing: 0.01em;
+}
+
+.gold-gradient-text {
+  background: linear-gradient(135deg, #d4a63a 0%, #e8c76a 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.hero-gradient {
+  background: linear-gradient(135deg, #081528 0%, #10233f 65%, #d4a63a 120%);
+}
+
+.card-glass {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--color-border);
+  backdrop-filter: blur(6px);
 }
