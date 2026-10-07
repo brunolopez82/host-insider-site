@@ -1,21 +1,41 @@
 import Image from "next/image";
-import { FadeIn, PrimaryCTA, SecondaryCTA } from "@/components/ui";
+import { FadeIn, PrimaryCTA } from "@/components/ui";
 
-const STATS = [
-  { stat: "3+ yrs", label: "Inside Airbnb's Resolutions team" },
-  { stat: "3,000+", label: "Real disputes mediated" },
+const PROOF = [
+  { n: "3+ yrs", d: "Inside Airbnb's Resolutions team, handling disputes between hosts and guests." },
+  { n: "3,000+", d: "Real host and guest disputes mediated, which is where the patterns come from." },
+  { n: "Hosts only", d: "No guests in the room, so conversations stay useful instead of turning into arguments." },
 ];
+
+const REMOVES = [
+  "Hosts only. No guests, no arguments.",
+  "I personally reply to every post.",
+  "7-day free trial. Cancel anytime.",
+];
+
+function CtaBlock() {
+  return (
+    <div className="flex flex-col items-center">
+      <PrimaryCTA className="text-[15px] px-9 py-4">
+        Join Host Insider Pro →
+      </PrimaryCTA>
+      <p className="mt-3.5 text-white/40 text-[13px]">
+        7-day free trial. First 10 members join free, for life.
+      </p>
+    </div>
+  );
+}
 
 export default function Home() {
   return (
     <main className="tone-dark min-h-screen flex flex-col text-[color:var(--fg)]">
       <header className="px-6 pt-7">
-        <div className="max-w-[1100px] mx-auto flex items-center gap-2.5">
+        <div className="max-w-[1000px] mx-auto flex items-center gap-2.5">
           <Image
             src="/images/icon.webp"
             alt="Host Insider Pro"
-            width={34}
-            height={34}
+            width={32}
+            height={32}
             className="rounded-full"
             priority
           />
@@ -25,58 +45,90 @@ export default function Home() {
         </div>
       </header>
 
-      <section className="flex-1 flex items-center px-6 py-14 md:py-20">
-        <div className="max-w-[1100px] mx-auto w-full grid md:grid-cols-[1.2fr_1fr] gap-12 md:gap-16 items-center">
+      {/* Hero */}
+      <section className="px-6 pt-14 pb-16 md:pt-20 md:pb-20 text-center">
+        <div className="max-w-[820px] mx-auto">
           <FadeIn>
-            <h1 className="text-[38px] sm:text-5xl md:text-[58px] font-extrabold leading-[1.05] tracking-[-0.035em]">
-              Grow your Airbnb{" "}
-              <span className="brand-gradient-text">like an insider</span>
+            <p className="text-orange text-xs md:text-[13px] font-bold tracking-[0.18em] uppercase">
+              Private community for Airbnb hosts
+            </p>
+
+            <h1 className="mt-6 text-[40px] sm:text-[52px] md:text-[60px] font-extrabold leading-[1.04] tracking-[-0.035em]">
+              You don&apos;t have to figure out
+              <br className="hidden sm:block" />{" "}
+              <span className="brand-gradient-text">Airbnb on your own</span>
             </h1>
 
-            <p className="mt-6 text-white/60 text-lg md:text-xl leading-relaxed max-w-lg">
-              A private, hosts-only community for Airbnb hosts. Built by someone
-              who spent three years inside Airbnb&apos;s Resolutions team.
+            <p className="mt-7 text-white/60 text-lg md:text-xl leading-relaxed max-w-[640px] mx-auto">
+              A private, hosts-only community where real hosting problems get
+              real answers. Bring the guest situation you&apos;re stuck on and
+              get a straight reply, not fifty opinions.
             </p>
 
-            <p className="mt-4 font-accent text-2xl text-orange">
-              Learn. Optimize. Protect. Grow.
-            </p>
-
-            <div className="mt-9 flex flex-col sm:flex-row gap-3">
-              <PrimaryCTA>Join Host Insider Pro</PrimaryCTA>
-              <SecondaryCTA href="/start">See what&apos;s inside</SecondaryCTA>
+            <div className="mt-10">
+              <CtaBlock />
             </div>
-
-            <p className="mt-7 text-[15px]">
-              <span className="font-bold text-amber">
-                First 10 members join free, for life.
-              </span>{" "}
-              <span className="text-white/50">
-                After that $5/month, locked in.
-              </span>
-            </p>
           </FadeIn>
 
           <FadeIn delay={0.15}>
-            <div className="relative rounded-2xl overflow-hidden border border-white/10 shadow-[0_30px_80px_rgba(0,0,0,0.5)]">
-              <Image
-                src="/images/hero.webp"
-                alt="Bruno Lopes, founder of Host Insider Pro"
-                width={1200}
-                height={627}
-                className="w-full h-auto"
-                priority
-              />
+            <div className="mt-14 flex flex-col sm:flex-row sm:flex-wrap items-center justify-center gap-x-9 gap-y-3.5">
+              {REMOVES.map((r) => (
+                <span
+                  key={r}
+                  className="flex items-center gap-2.5 text-white/70 text-[15px]"
+                >
+                  <span className="text-orange font-bold">✓</span>
+                  {r}
+                </span>
+              ))}
             </div>
+          </FadeIn>
+        </div>
+      </section>
 
-            <div className="mt-6 grid grid-cols-2 gap-5">
-              {STATS.map((s) => (
-                <div key={s.stat}>
-                  <p className="brand-gradient-text text-2xl font-extrabold tracking-[-0.02em]">
-                    {s.stat}
+      {/* Why listen to me */}
+      <section className="px-6 py-16 md:py-20 border-t border-white/[0.07]">
+        <div className="max-w-[1000px] mx-auto">
+          <FadeIn>
+            <h2 className="text-center text-2xl md:text-[32px] font-extrabold tracking-[-0.03em]">
+              Why listen to me?
+            </h2>
+
+            <div className="mt-10 flex flex-col md:flex-row items-center md:items-start gap-8 md:gap-11 max-w-[760px] mx-auto">
+              <div className="relative w-[150px] h-[150px] shrink-0 rounded-2xl overflow-hidden border border-white/10">
+                <Image
+                  src="/images/hero.webp"
+                  alt="Bruno Lopes, founder of Host Insider Pro"
+                  fill
+                  style={{ objectFit: "cover", objectPosition: "75% 30%" }}
+                />
+              </div>
+
+              <div className="text-center md:text-left">
+                <p className="text-white/70 text-lg leading-relaxed">
+                  I&apos;m Bruno. I spent three years inside Airbnb&apos;s
+                  Resolutions team, mediating disputes between hosts and guests.
+                  Most hosting problems aren&apos;t random — they follow
+                  patterns. This community turns those patterns into guidance
+                  you can actually use.
+                </p>
+                <p className="mt-4 text-white/45 text-[15px] leading-relaxed">
+                  No secret hacks. No manipulating Support. No promised
+                  outcomes.
+                </p>
+              </div>
+            </div>
+          </FadeIn>
+
+          <FadeIn delay={0.15}>
+            <div className="mt-14 grid sm:grid-cols-3 gap-9 max-w-[880px] mx-auto text-center sm:text-left">
+              {PROOF.map((p) => (
+                <div key={p.n}>
+                  <p className="brand-gradient-text text-[28px] font-extrabold tracking-[-0.02em]">
+                    {p.n}
                   </p>
-                  <p className="text-white/45 text-[13px] mt-1 leading-snug">
-                    {s.label}
+                  <p className="mt-2 text-white/45 text-sm leading-relaxed">
+                    {p.d}
                   </p>
                 </div>
               ))}
@@ -85,15 +137,35 @@ export default function Home() {
         </div>
       </section>
 
-      <footer className="px-6 pb-7">
-        <div className="max-w-[1100px] mx-auto flex flex-col sm:flex-row sm:items-center justify-between gap-3">
-          <p className="text-white/30 text-xs max-w-xl">
+      {/* Closing CTA */}
+      <section className="px-6 py-16 md:py-20 border-t border-white/[0.07] text-center">
+        <FadeIn>
+          <h2 className="text-2xl md:text-[34px] font-extrabold tracking-[-0.03em] max-w-[620px] mx-auto leading-[1.15]">
+            Ready to stop guessing your way through it?
+          </h2>
+          <div className="mt-9">
+            <CtaBlock />
+          </div>
+          <p className="mt-9">
+            <a
+              href="/start"
+              className="text-white/40 hover:text-orange text-sm underline underline-offset-4"
+            >
+              Or see everything that&apos;s inside first
+            </a>
+          </p>
+        </FadeIn>
+      </section>
+
+      <footer className="px-6 py-9 border-t border-white/[0.07]">
+        <div className="max-w-[1000px] mx-auto flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+          <p className="text-white/25 text-xs max-w-xl leading-relaxed">
             Host Insider Pro is an independent community and is not affiliated
             with, endorsed by, or operated by Airbnb.
           </p>
           <a
             href="mailto:hello@hostinsider.app"
-            className="text-white/40 hover:text-orange text-xs"
+            className="text-white/35 hover:text-orange text-xs shrink-0"
           >
             hello@hostinsider.app
           </a>

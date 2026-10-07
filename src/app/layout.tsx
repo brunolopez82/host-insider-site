@@ -15,9 +15,9 @@ const caveat = Caveat({
 });
 
 export const metadata: Metadata = {
-  title: "Host Insider Pro — Grow Your Airbnb Like an Insider",
+  title: "Host Insider Pro — A Private Community for Airbnb Hosts",
   description:
-    "A private, hosts-only community for Airbnb hosts who want better listings, more bookings, smarter systems, and practical guidance when things go wrong. Built by a former Airbnb Resolutions agent.",
+    "You don't have to figure out Airbnb on your own. A private, hosts-only community where real hosting problems get real answers, from someone who spent three years inside Airbnb's Resolutions team.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
