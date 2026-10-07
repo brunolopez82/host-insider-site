@@ -62,7 +62,7 @@ export function FoundingMembers() {
             <p className="text-[color:var(--fg-muted)] text-sm mb-1">
               After the first 10
             </p>
-            <p className="text-2xl font-extrabold mb-1">$9/month</p>
+            <p className="text-2xl font-extrabold mb-1">$5/month</p>
             <p className="text-[color:var(--fg-muted)] text-sm mb-8">
               Your founding price is locked in forever.
             </p>

@@ -158,7 +158,7 @@ export function FoundingOfferBadge({ className = "" }: { className?: string }) {
         First 10 members join FREE for life.
       </span>
       <span className="text-[color:var(--fg-muted)]">
-        After that: $9/month. Your price is locked in forever.
+        After that: $5/month. Your price is locked in forever.
       </span>
     </div>
   );
