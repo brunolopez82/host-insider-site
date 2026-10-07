@@ -11,7 +11,7 @@ const PRINCIPLES = [
 
 export function Principles() {
   return (
-    <Section className="bg-deep-blue/20">
+    <Section tone="off">
       <FadeIn>
         <Eyebrow>How we do things here</Eyebrow>
         <Heading>Principles.</Heading>
@@ -21,19 +21,21 @@ export function Principles() {
         {PRINCIPLES.map((p, i) => (
           <FadeIn key={p} delay={i * 0.06}>
             <Card className="text-center py-8">
-              <p className="font-headline text-sm md:text-base uppercase tracking-wide">
-                {p}
-              </p>
+              <p className="font-bold text-base tracking-[-0.02em]">{p}</p>
             </Card>
           </FadeIn>
         ))}
       </div>
 
       <FadeIn delay={0.4}>
-        <div className="mt-10 max-w-2xl mx-auto text-center text-slate text-lg leading-relaxed">
-          <p>Airbnb is not your friend. Airbnb is not your enemy. It&apos;s a business partner.</p>
-          <p className="mt-2">
-            The goal is to understand how the platform works and make better decisions.
+        <div className="mt-10 max-w-2xl mx-auto text-center">
+          <p className="text-xl md:text-2xl font-extrabold tracking-[-0.03em]">
+            Airbnb is not your friend. Airbnb is not your enemy. It&apos;s a
+            business partner.
+          </p>
+          <p className="mt-3 text-text-muted text-base leading-relaxed">
+            The goal is to understand how the platform works and make better
+            decisions.
           </p>
         </div>
       </FadeIn>

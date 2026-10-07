@@ -42,32 +42,36 @@ export function FAQ() {
   const [open, setOpen] = useState<number | null>(0);
 
   return (
-    <Section className="bg-deep-blue/20">
+    <Section tone="off">
       <FadeIn>
         <Eyebrow>Questions</Eyebrow>
-        <Heading>FAQ</Heading>
+        <Heading>Got questions? Here you go.</Heading>
       </FadeIn>
 
-      <div className="mt-10 max-w-2xl divide-y divide-border">
+      <div className="mt-10 max-w-2xl">
         {FAQS.map((item, i) => {
           const isOpen = open === i;
           return (
-            <div key={item.q} className="py-5">
+            <div key={item.q} className="border-b border-black/[0.08] py-5">
               <button
                 onClick={() => setOpen(isOpen ? null : i)}
                 className="w-full flex items-center justify-between gap-4 text-left"
               >
-                <span className="font-medium text-white text-base md:text-lg">
+                <span className="font-bold text-base md:text-lg tracking-[-0.02em]">
                   {item.q}
                 </span>
                 <span
-                  className={`text-gold-soft text-xl shrink-0 transition-transform ${isOpen ? "rotate-45" : ""}`}
+                  className={`text-orange text-xl shrink-0 transition-transform ${
+                    isOpen ? "rotate-45" : ""
+                  }`}
                 >
                   +
                 </span>
               </button>
               {isOpen && (
-                <p className="mt-3 text-slate leading-relaxed">{item.a}</p>
+                <p className="mt-3 text-text-muted leading-relaxed">
+                  {item.a}
+                </p>
               )}
             </div>
           );

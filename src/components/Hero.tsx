@@ -3,53 +3,49 @@ import { FadeIn, PrimaryCTA, SecondaryCTA, FoundingOfferBadge } from "./ui";
 
 export function Hero() {
   return (
-    <section className="relative overflow-hidden border-b border-border/60">
-      <div className="absolute inset-0 hero-gradient opacity-90" />
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,rgba(212,166,58,0.12),transparent_60%)]" />
-
-      <div className="relative max-w-[1200px] mx-auto px-6 pt-16 pb-14 md:pt-24 md:pb-20 grid md:grid-cols-2 gap-12 items-center">
+    <section className="tone-light relative overflow-hidden">
+      <div className="relative max-w-[1200px] mx-auto px-6 pt-14 pb-16 md:pt-20 md:pb-24 grid md:grid-cols-2 gap-12 items-center">
         <FadeIn>
-          <div className="flex items-center gap-3 mb-8">
+          <div className="flex items-center gap-2.5 mb-8">
             <Image
               src="/images/icon.png"
               alt="Host Insider Pro"
-              width={40}
-              height={40}
+              width={36}
+              height={36}
               className="rounded-full"
             />
-            <span className="font-headline text-lg tracking-wide">
-              HOST INSIDER <span className="text-gold-soft">PRO</span>
+            <span className="font-bold text-base tracking-tight">
+              Host Insider <span className="text-orange">Pro</span>
             </span>
           </div>
 
-          <h1 className="font-headline text-4xl sm:text-5xl md:text-6xl leading-[1.05] uppercase">
-            Grow your airbnb
-            <br />
-            <span className="gold-gradient-text">like an insider</span>
+          <h1 className="text-4xl sm:text-5xl md:text-[52px] font-extrabold leading-[1.08] tracking-[-0.03em]">
+            Grow your Airbnb{" "}
+            <span className="brand-gradient-text">like an insider</span>
           </h1>
 
-          <p className="mt-6 text-slate text-lg md:text-xl max-w-xl">
+          <p className="mt-6 text-text-muted text-lg leading-relaxed max-w-xl">
             A private, hosts-only community for Airbnb hosts who want better
             listings, more bookings, smarter systems, and practical guidance
             when things go wrong.
           </p>
 
-          <p className="mt-3 text-gold-soft font-semibold tracking-wide uppercase text-sm md:text-base">
+          <p className="mt-4 font-accent text-2xl text-orange">
             Learn. Optimize. Protect. Grow.
           </p>
 
-          <div className="mt-8 flex flex-col sm:flex-row gap-4">
+          <div className="mt-8 flex flex-col sm:flex-row gap-3">
             <PrimaryCTA>Join Host Insider Pro</PrimaryCTA>
-            <SecondaryCTA href="#whats-inside">See What&apos;s Inside</SecondaryCTA>
+            <SecondaryCTA href="#whats-inside">See what&apos;s inside</SecondaryCTA>
           </div>
 
           <FoundingOfferBadge className="mt-8" />
         </FadeIn>
 
         <FadeIn delay={0.15} className="relative">
-          <div className="relative rounded-[18px] overflow-hidden border border-border shadow-[0_30px_80px_rgba(0,0,0,0.5)]">
+          <div className="relative rounded-xl overflow-hidden border border-black/[0.08] shadow-[0_20px_60px_rgba(0,0,0,0.12)]">
             <Image
-              src="/images/hero-founder.png"
+              src="/images/hero-founder.jpg"
               alt="Bruno, founder of Host Insider Pro"
               width={1200}
               height={627}

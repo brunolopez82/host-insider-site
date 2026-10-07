@@ -1,16 +1,17 @@
 import type { Metadata } from "next";
-import { Anton, Inter } from "next/font/google";
+import { Plus_Jakarta_Sans, Caveat } from "next/font/google";
 import "./globals.css";
 
-const anton = Anton({
-  weight: "400",
+const jakarta = Plus_Jakarta_Sans({
   subsets: ["latin"],
-  variable: "--font-anton",
+  weight: ["400", "500", "600", "700", "800"],
+  variable: "--font-jakarta",
 });
 
-const inter = Inter({
+const caveat = Caveat({
   subsets: ["latin"],
-  variable: "--font-inter",
+  weight: ["400", "600"],
+  variable: "--font-caveat",
 });
 
 export const metadata: Metadata = {
@@ -23,9 +24,9 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="en"
-      className={`${anton.variable} ${inter.variable} h-full antialiased`}
+      className={`${jakarta.variable} ${caveat.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col bg-midnight text-white">
+      <body className="min-h-full flex flex-col bg-white text-text">
         {children}
       </body>
     </html>

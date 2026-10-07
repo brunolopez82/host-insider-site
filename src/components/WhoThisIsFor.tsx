@@ -21,19 +21,24 @@ const NOT_FOR = [
 
 export function WhoThisIsFor() {
   return (
-    <Section>
+    <Section tone="light">
       <FadeIn>
         <Eyebrow>Fit check</Eyebrow>
         <Heading>This community is for you if...</Heading>
       </FadeIn>
 
-      <div className="mt-10 grid md:grid-cols-2 gap-6">
+      <div className="mt-10 grid md:grid-cols-2 gap-5">
         <FadeIn delay={0.1}>
           <Card className="h-full">
             <ul className="space-y-3">
               {FOR.map((item) => (
-                <li key={item} className="flex items-start gap-3 text-slate text-base">
-                  <span className="text-gold-soft mt-0.5 shrink-0">✓</span>
+                <li
+                  key={item}
+                  className="flex items-start gap-3 text-text-muted text-base"
+                >
+                  <span className="text-orange mt-0.5 shrink-0 font-bold">
+                    ✓
+                  </span>
                   {item}
                 </li>
               ))}
@@ -43,13 +48,16 @@ export function WhoThisIsFor() {
 
         <FadeIn delay={0.2}>
           <Card className="h-full">
-            <p className="font-headline text-sm uppercase tracking-wide text-slate mb-4">
+            <p className="font-bold text-sm uppercase tracking-[0.16em] text-text-light mb-4">
               Not for you if...
             </p>
             <ul className="space-y-3">
               {NOT_FOR.map((item) => (
-                <li key={item} className="flex items-start gap-3 text-slate/70 text-base">
-                  <span className="text-slate/50 mt-0.5 shrink-0">✕</span>
+                <li
+                  key={item}
+                  className="flex items-start gap-3 text-text-light text-base"
+                >
+                  <span className="mt-0.5 shrink-0">✕</span>
                   {item}
                 </li>
               ))}

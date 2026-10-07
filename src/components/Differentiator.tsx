@@ -1,23 +1,30 @@
-import { FadeIn, Section, Heading, Eyebrow } from "./ui";
+import { FadeIn, Section, Heading, Eyebrow, Lead } from "./ui";
 
-const BADGES = ["Hosts Only", "No Toxicity", "No Guest-Bashing", "No Drama"];
+const BADGES = ["Hosts only", "No toxicity", "No guest-bashing", "No drama"];
 
 export function Differentiator() {
   return (
-    <Section className="bg-deep-blue/20">
+    <Section tone="peach">
       <div className="max-w-3xl">
         <FadeIn>
           <Eyebrow>What makes this different</Eyebrow>
-          <Heading>Not another facebook group.</Heading>
+          <Heading>Not another Facebook group.</Heading>
         </FadeIn>
         <FadeIn delay={0.1}>
-          <div className="mt-6 space-y-4 text-slate text-lg leading-relaxed">
-            <p>
-              Most large hosting groups mix hosts and guests, which can
-              quickly turn useful conversations into arguments.
-            </p>
-            <p>Host Insider Pro is different. It&apos;s built exclusively for hosts.</p>
-            <p>A positive environment where hosts can ask questions, share experiences, discuss real problems, learn from each other, build relationships, and improve their businesses.</p>
+          <div className="mt-6 space-y-4">
+            <Lead>
+              Most large hosting groups mix hosts and guests, which can quickly
+              turn useful conversations into arguments.
+            </Lead>
+            <Lead>
+              Host Insider Pro is different. It&apos;s built exclusively for
+              hosts.
+            </Lead>
+            <Lead>
+              A positive environment where hosts can ask questions, share
+              experiences, discuss real problems, learn from each other, build
+              relationships, and improve their businesses.
+            </Lead>
           </div>
         </FadeIn>
         <FadeIn delay={0.2}>
@@ -25,7 +32,7 @@ export function Differentiator() {
             {BADGES.map((b) => (
               <span
                 key={b}
-                className="rounded-full border border-gold/40 bg-gold/10 px-5 py-2 text-gold-soft font-semibold uppercase tracking-wide text-xs md:text-sm"
+                className="rounded-full bg-white border border-orange/20 px-5 py-2 text-orange-deep font-bold text-xs md:text-sm"
               >
                 {b}
               </span>

@@ -1,27 +1,32 @@
 @import "tailwindcss";
 
 :root {
-  --color-midnight: #081528;
-  --color-deep-blue: #10233f;
-  --color-black: #050a12;
-  --color-gold: #d4a63a;
-  --color-gold-soft: #e8c76a;
-  --color-white: #f5f7fa;
-  --color-slate: #b8c4d6;
-  --color-border: #2a3a56;
+  --color-ink: #0c0c0c;
+  --color-ink-soft: #161616;
+  --color-white: #ffffff;
+  --color-off: #fafafa;
+  --color-peach: #fff4ef;
+  --color-orange: #e8622a;
+  --color-amber: #f5a623;
+  --color-orange-deep: #c7501e;
+  --color-text: #111111;
+  --color-text-muted: #555555;
+  --color-text-light: #767676;
 }
 
 @theme inline {
-  --color-midnight: var(--color-midnight);
-  --color-deep-blue: var(--color-deep-blue);
-  --color-black: var(--color-black);
-  --color-gold: var(--color-gold);
-  --color-gold-soft: var(--color-gold-soft);
+  --color-ink: var(--color-ink);
+  --color-ink-soft: var(--color-ink-soft);
   --color-white: var(--color-white);
-  --color-slate: var(--color-slate);
-  --color-border: var(--color-border);
-  --font-headline: var(--font-anton);
-  --font-body: var(--font-inter);
+  --color-off: var(--color-off);
+  --color-peach: var(--color-peach);
+  --color-orange: var(--color-orange);
+  --color-amber: var(--color-amber);
+  --color-orange-deep: var(--color-orange-deep);
+  --color-text: var(--color-text);
+  --color-text-muted: var(--color-text-muted);
+  --font-display: var(--font-jakarta);
+  --font-accent: var(--font-caveat);
 }
 
 html {
@@ -29,29 +34,101 @@ html {
 }
 
 body {
-  background: var(--color-midnight);
-  color: var(--color-white);
-  font-family: var(--font-inter), Inter, Montserrat, Arial, sans-serif;
+  background: var(--color-white);
+  color: var(--color-text);
+  font-family: var(--font-jakarta), "Plus Jakarta Sans", -apple-system,
+    BlinkMacSystemFont, sans-serif;
 }
 
-h1, h2, h3, .font-headline {
-  font-family: var(--font-anton), Anton, Montserrat, Arial, sans-serif;
-  letter-spacing: 0.01em;
+h1,
+h2,
+h3 {
+  font-family: var(--font-jakarta), "Plus Jakarta Sans", -apple-system,
+    BlinkMacSystemFont, sans-serif;
 }
 
-.gold-gradient-text {
-  background: linear-gradient(135deg, #d4a63a 0%, #e8c76a 100%);
+/* Section tones: light / off-white / dark, each exposing its own fg + card vars */
+.tone-light {
+  --fg: #111111;
+  --fg-muted: #555555;
+  --card-bg: #ffffff;
+  --card-border: rgba(0, 0, 0, 0.08);
+  --divider: rgba(0, 0, 0, 0.08);
+  background: #ffffff;
+}
+
+.tone-off {
+  --fg: #111111;
+  --fg-muted: #555555;
+  --card-bg: #ffffff;
+  --card-border: rgba(0, 0, 0, 0.08);
+  --divider: rgba(0, 0, 0, 0.08);
+  background: #fafafa;
+}
+
+.tone-peach {
+  --fg: #111111;
+  --fg-muted: #555555;
+  --card-bg: #ffffff;
+  --card-border: rgba(0, 0, 0, 0.08);
+  --divider: rgba(0, 0, 0, 0.08);
+  background: #fff4ef;
+}
+
+.tone-dark {
+  --fg: #ffffff;
+  --fg-muted: rgba(255, 255, 255, 0.6);
+  --card-bg: #161616;
+  --card-border: rgba(255, 255, 255, 0.1);
+  --divider: rgba(255, 255, 255, 0.1);
+  background: #0c0c0c;
+}
+
+.brand-gradient {
+  background: linear-gradient(135deg, #e8622a 0%, #f5a623 100%);
+}
+
+.brand-gradient-text {
+  background: linear-gradient(135deg, #e8622a 0%, #f5a623 100%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
 }
 
-.hero-gradient {
-  background: linear-gradient(135deg, #081528 0%, #10233f 65%, #d4a63a 120%);
+.brand-gradient-soft {
+  background: linear-gradient(
+    135deg,
+    rgba(232, 98, 42, 0.2),
+    rgba(245, 166, 35, 0.15)
+  );
 }
 
-.card-glass {
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid var(--color-border);
-  backdrop-filter: blur(6px);
+.marquee {
+  display: flex;
+  overflow: hidden;
+  user-select: none;
+  gap: 2rem;
+}
+
+.marquee__track {
+  display: flex;
+  gap: 2rem;
+  flex-shrink: 0;
+  animation: scroll 32s linear infinite;
+  min-width: 100%;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .marquee__track {
+    animation: none;
+  }
 }
