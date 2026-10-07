@@ -97,10 +97,10 @@ export default function Home() {
             <div className="mt-10 flex flex-col md:flex-row items-center md:items-start gap-8 md:gap-11 max-w-[760px] mx-auto">
               <div className="relative w-[150px] h-[150px] shrink-0 rounded-2xl overflow-hidden border border-white/10">
                 <Image
-                  src="/images/hero.webp"
+                  src="/images/avatar.webp"
                   alt="Bruno Lopes, founder of Host Insider Pro"
                   fill
-                  style={{ objectFit: "cover", objectPosition: "75% 30%" }}
+                  style={{ objectFit: "cover", objectPosition: "center" }}
                 />
               </div>
 

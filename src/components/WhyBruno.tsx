@@ -8,10 +8,10 @@ export function WhyBruno() {
         <FadeIn>
           <div className="relative rounded-xl overflow-hidden border border-white/10 max-w-[280px] aspect-square">
             <Image
-              src="/images/hero.webp"
+              src="/images/avatar.webp"
               alt="Bruno Lopes, founder of Host Insider Pro"
               fill
-              style={{ objectFit: "cover", objectPosition: "75% 30%" }}
+              style={{ objectFit: "cover", objectPosition: "center" }}
             />
           </div>
         </FadeIn>

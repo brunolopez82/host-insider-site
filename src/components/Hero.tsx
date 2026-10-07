@@ -45,10 +45,10 @@ export function Hero() {
         <FadeIn delay={0.15} className="relative">
           <div className="relative rounded-xl overflow-hidden border border-black/[0.08] shadow-[0_20px_60px_rgba(0,0,0,0.12)]">
             <Image
-              src="/images/hero.webp"
+              src="/images/avatar.webp"
               alt="Bruno, founder of Host Insider Pro"
-              width={1200}
-              height={627}
+              width={520}
+              height={520}
               className="w-full h-auto"
               priority
             />
