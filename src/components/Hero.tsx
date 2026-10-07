@@ -8,7 +8,7 @@ export function Hero() {
         <FadeIn>
           <div className="flex items-center gap-2.5 mb-8">
             <Image
-              src="/images/icon.png"
+              src="/images/icon.webp"
               alt="Host Insider Pro"
               width={36}
               height={36}
@@ -45,7 +45,7 @@ export function Hero() {
         <FadeIn delay={0.15} className="relative">
           <div className="relative rounded-xl overflow-hidden border border-black/[0.08] shadow-[0_20px_60px_rgba(0,0,0,0.12)]">
             <Image
-              src="/images/hero-founder.jpg"
+              src="/images/hero.webp"
               alt="Bruno, founder of Host Insider Pro"
               width={1200}
               height={627}

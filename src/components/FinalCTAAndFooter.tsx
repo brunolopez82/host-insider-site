@@ -31,7 +31,7 @@ export function Footer() {
         <div>
           <div className="flex items-center gap-2 mb-3">
             <Image
-              src="/images/icon.png"
+              src="/images/icon.webp"
               alt="Host Insider Pro"
               width={28}
               height={28}
