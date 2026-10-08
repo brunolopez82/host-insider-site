@@ -26,7 +26,7 @@ export function AIMarketing() {
 
         <FadeIn delay={0.15}>
           <Card>
-            <p className="text-orange font-bold uppercase tracking-[0.16em] text-xs mb-3">
+            <p className="accent-ink font-bold uppercase tracking-[0.16em] text-xs mb-3">
               Workshop
             </p>
             <h3 className="text-xl font-extrabold mb-3 tracking-[-0.02em]">
@@ -38,7 +38,7 @@ export function AIMarketing() {
             <ul className="space-y-2 text-text-muted text-sm">
               {BENEFITS.map((item) => (
                 <li key={item} className="flex items-start gap-2">
-                  <span className="text-orange mt-0.5 font-bold">✓</span>
+                  <span className="accent-ink mt-0.5 font-bold">✓</span>
                   {item}
                 </li>
               ))}

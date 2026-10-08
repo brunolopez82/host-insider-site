@@ -12,7 +12,7 @@ const SHAPES = [
 
 export function FoundingMembers() {
   return (
-    <Section tone="dark">
+    <Section tone="light">
       <div className="grid lg:grid-cols-[1.2fr_1fr] gap-12 items-start">
         <FadeIn>
           <Eyebrow>Founding members</Eyebrow>
@@ -35,13 +35,13 @@ export function FoundingMembers() {
                 key={s}
                 className="flex items-start gap-2 text-[color:var(--fg-muted)] text-sm"
               >
-                <span className="text-orange mt-0.5 font-bold">✓</span>
+                <span className="accent-ink mt-0.5 font-bold">✓</span>
                 {s}
               </li>
             ))}
           </ul>
 
-          <p className="mt-8 font-accent text-2xl text-amber">
+          <p className="mt-8 font-accent text-2xl accent-ink">
             &ldquo;I&apos;d rather create 10 resources hosts genuinely use than
             100 videos nobody watches.&rdquo;
           </p>
@@ -49,7 +49,7 @@ export function FoundingMembers() {
 
         <FadeIn delay={0.15}>
           <Card className="text-center">
-            <p className="text-amber text-sm font-bold uppercase tracking-[0.16em] mb-2">
+            <p className="accent-ink text-sm font-bold uppercase tracking-[0.16em] mb-2">
               First 10 members
             </p>
             <p className="brand-gradient-text text-4xl font-extrabold tracking-[-0.03em] mb-6">

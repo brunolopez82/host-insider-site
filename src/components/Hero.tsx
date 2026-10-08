@@ -15,7 +15,7 @@ export function Hero() {
               className="rounded-full"
             />
             <span className="font-bold text-base tracking-tight">
-              Host Insider <span className="text-orange">Pro</span>
+              Host Insider <span className="accent-ink">Pro</span>
             </span>
           </div>
 
@@ -30,7 +30,7 @@ export function Hero() {
             when things go wrong.
           </p>
 
-          <p className="mt-4 font-accent text-2xl text-orange">
+          <p className="mt-4 font-accent text-2xl accent-ink">
             Learn. Optimize. Protect. Grow.
           </p>
 

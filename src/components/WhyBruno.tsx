@@ -3,10 +3,10 @@ import { FadeIn, Section, Heading, Eyebrow, Lead } from "./ui";
 
 export function WhyBruno() {
   return (
-    <Section tone="dark">
+    <Section tone="off">
       <div className="grid md:grid-cols-[280px_1fr] gap-10 items-start">
         <FadeIn>
-          <div className="relative rounded-xl overflow-hidden border border-white/10 max-w-[280px] aspect-square">
+          <div className="relative rounded-xl overflow-hidden border border-[color:var(--card-border)] max-w-[280px] aspect-square">
             <Image
               src="/images/avatar.webp"
               alt="Bruno Lopes, founder of Host Insider Pro"
@@ -35,7 +35,7 @@ export function WhyBruno() {
               The goal of Host Insider Pro is to turn those patterns into
               practical guidance hosts can actually use.
             </Lead>
-            <p className="text-white font-semibold text-lg leading-relaxed">
+            <p className="text-[color:var(--fg)] font-semibold text-lg leading-relaxed">
               I don&apos;t have secret Airbnb hacks. I don&apos;t manipulate
               Support. I don&apos;t promise outcomes.
             </p>

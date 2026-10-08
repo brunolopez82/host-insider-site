@@ -4,7 +4,8 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import { ReactNode } from "react";
 
-export const SKOOL_URL = "https://www.skool.com/host-insider-pro-3263/about";
+export { SKOOL_URL } from "@/lib/links";
+import { SKOOL_URL } from "@/lib/links";
 
 export type Tone = "light" | "off" | "peach" | "dark";
 
@@ -53,7 +54,7 @@ export function Section({
 
 export function Eyebrow({ children }: { children: ReactNode }) {
   return (
-    <p className="text-orange text-xs md:text-sm font-bold tracking-[0.16em] uppercase mb-4">
+    <p className="accent-ink text-xs md:text-sm font-bold tracking-[0.16em] uppercase mb-4">
       {children}
     </p>
   );
@@ -103,7 +104,8 @@ export function PrimaryCTA({
       href={SKOOL_URL}
       target="_blank"
       rel="noopener noreferrer"
-      className={`brand-gradient inline-flex items-center justify-center gap-2 rounded-full px-7 py-3.5 font-semibold text-white text-base transition-transform hover:scale-[1.03] ${className}`}
+      className={`inline-flex items-center justify-center gap-2 rounded-full px-7 py-3.5 font-semibold text-white text-base transition-transform hover:scale-[1.03] ${className}`}
+      style={{ background: "var(--color-orange-deep)" }}
     >
       {children}
     </Link>
@@ -154,7 +156,7 @@ export function FoundingOfferBadge({ className = "" }: { className?: string }) {
     <div
       className={`inline-flex flex-col gap-1 rounded-xl brand-gradient-soft border border-orange/20 px-5 py-4 text-sm md:text-base ${className}`}
     >
-      <span className="font-bold text-orange-deep">
+      <span className="font-bold accent-ink">
         First 10 members join FREE for life.
       </span>
       <span className="text-[color:var(--fg-muted)]">

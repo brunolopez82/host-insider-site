@@ -61,7 +61,7 @@ export function FAQ() {
                   {item.q}
                 </span>
                 <span
-                  className={`text-orange text-xl shrink-0 transition-transform ${
+                  className={`accent-ink text-xl shrink-0 transition-transform ${
                     isOpen ? "rotate-45" : ""
                   }`}
                 >

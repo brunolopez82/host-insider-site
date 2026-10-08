@@ -40,7 +40,7 @@ export default function Home() {
             priority
           />
           <span className="font-bold text-[15px] tracking-tight">
-            Host Insider <span className="text-orange">Pro</span>
+            Host Insider <span className="accent-ink">Pro</span>
           </span>
         </div>
       </header>
@@ -49,7 +49,7 @@ export default function Home() {
       <section className="px-6 pt-14 pb-16 md:pt-20 md:pb-20 text-center">
         <div className="max-w-[820px] mx-auto">
           <FadeIn>
-            <p className="text-orange text-xs md:text-[13px] font-bold tracking-[0.18em] uppercase">
+            <p className="accent-ink text-xs md:text-[13px] font-bold tracking-[0.18em] uppercase">
               Private community for Airbnb hosts
             </p>
 
@@ -77,7 +77,7 @@ export default function Home() {
                   key={r}
                   className="flex items-center gap-2.5 text-white/70 text-[15px]"
                 >
-                  <span className="text-orange font-bold">✓</span>
+                  <span className="accent-ink font-bold">✓</span>
                   {r}
                 </span>
               ))}
@@ -149,7 +149,7 @@ export default function Home() {
           <p className="mt-9">
             <a
               href="/start"
-              className="text-white/40 hover:text-orange text-sm underline underline-offset-4"
+              className="text-white/40 hover-accent-ink text-sm underline underline-offset-4"
             >
               Or see everything that&apos;s inside first
             </a>
@@ -165,7 +165,7 @@ export default function Home() {
           </p>
           <a
             href="mailto:hello@hostinsider.app"
-            className="text-white/35 hover:text-orange text-xs shrink-0"
+            className="text-white/35 hover-accent-ink text-xs shrink-0"
           >
             hello@hostinsider.app
           </a>

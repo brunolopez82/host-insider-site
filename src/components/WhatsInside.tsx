@@ -25,7 +25,7 @@ const CARDS = [
 
 export function WhatsInside() {
   return (
-    <Section id="whats-inside" tone="dark">
+    <Section id="whats-inside" tone="off">
       <FadeIn>
         <Eyebrow>What&apos;s inside</Eyebrow>
         <Heading className="max-w-3xl">
@@ -53,7 +53,7 @@ export function WhatsInside() {
 
       <FadeIn delay={0.3}>
         <Card className="mt-5">
-          <p className="font-accent text-2xl text-amber mb-1">Host Hangout</p>
+          <p className="font-accent text-2xl accent-ink mb-1">Host Hangout</p>
           <Lead className="max-w-2xl">
             Live conversations with other hosts. Bring your real case. Ask
             questions. Share experiences. Learn from each other.

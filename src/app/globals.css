@@ -9,6 +9,9 @@
   --color-orange: #e8622a;
   --color-amber: #f5a623;
   --color-orange-deep: #c7501e;
+  /* Accent for SMALL text on light grounds. orange-deep drops to 4.2:1 on
+     tone-peach and 4.4:1 on tone-off; this clears 4.5:1 on all three. */
+  --color-orange-ink: #b0461a;
   --color-text: #111111;
   --color-text-muted: #555555;
   --color-text-light: #767676;
@@ -23,6 +26,7 @@
   --color-orange: var(--color-orange);
   --color-amber: var(--color-amber);
   --color-orange-deep: var(--color-orange-deep);
+  --color-orange-ink: var(--color-orange-ink);
   --color-text: var(--color-text);
   --color-text-muted: var(--color-text-muted);
   --font-display: var(--font-jakarta);
@@ -88,8 +92,12 @@ h3 {
   background: linear-gradient(135deg, #e8622a 0%, #f5a623 100%);
 }
 
+/* Gradient TEXT must stay legible on light grounds. The original ramp ends
+   at #f5a623, which measures ~2:1 on white and fails even at display size.
+   This ramp stays inside the legible range; .brand-gradient is unchanged
+   for FILLS, where text sits on top of it rather than being made of it. */
 .brand-gradient-text {
-  background: linear-gradient(135deg, #e8622a 0%, #f5a623 100%);
+  background: linear-gradient(135deg, #c7501e 0%, #e05a1f 100%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -131,4 +139,15 @@ h3 {
   .marquee__track {
     animation: none;
   }
+}
+
+/* Accent as TEXT on light grounds. `text-orange` (#e8622a) measures 3.2–3.4:1
+   on white, tone-off and tone-peach, which fails AA below display size.
+   Fills (bg-orange, borders, the gradient) are unaffected and keep #e8622a. */
+.accent-ink {
+  color: var(--color-orange-ink);
+}
+
+.hover-accent-ink:hover {
+  color: var(--color-orange-ink);
 }

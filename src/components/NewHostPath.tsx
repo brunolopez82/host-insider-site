@@ -41,7 +41,7 @@ export function NewHostPath() {
                 key={item}
                 className="flex items-start gap-2 text-text-muted text-sm"
               >
-                <span className="text-orange mt-0.5 font-bold">✓</span>
+                <span className="accent-ink mt-0.5 font-bold">✓</span>
                 {item}
               </li>
             ))}

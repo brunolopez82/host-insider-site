@@ -3,7 +3,7 @@ import { FadeIn, Section, Heading, Lead, PrimaryCTA, FoundingOfferBadge } from "
 
 export function FinalCTA() {
   return (
-    <Section tone="dark" className="text-center">
+    <Section tone="peach" className="text-center">
       <div className="max-w-2xl mx-auto">
         <FadeIn>
           <Heading>Always have someone in your corner.</Heading>
@@ -38,7 +38,7 @@ export function Footer() {
               className="rounded-full"
             />
             <span className="font-bold text-sm tracking-tight">
-              Host Insider <span className="text-orange">Pro</span>
+              Host Insider <span className="accent-ink">Pro</span>
             </span>
           </div>
           <p className="text-text-muted text-sm">
@@ -50,12 +50,12 @@ export function Footer() {
         </div>
 
         <nav className="flex flex-wrap gap-x-8 gap-y-2 text-sm text-text-muted">
-          <a href="#whats-inside" className="hover:text-orange">Community</a>
-          <a href="#" className="hover:text-orange">About</a>
-          <a href="#whats-inside" className="hover:text-orange">Academy</a>
-          <a href="mailto:hello@hostinsider.app" className="hover:text-orange">Contact</a>
-          <a href="#" className="hover:text-orange">Terms</a>
-          <a href="#" className="hover:text-orange">Privacy</a>
+          <a href="#whats-inside" className="hover-accent-ink">Community</a>
+          <a href="#" className="hover-accent-ink">About</a>
+          <a href="#whats-inside" className="hover-accent-ink">Academy</a>
+          <a href="mailto:hello@hostinsider.app" className="hover-accent-ink">Contact</a>
+          <a href="#" className="hover-accent-ink">Terms</a>
+          <a href="#" className="hover-accent-ink">Privacy</a>
         </nav>
       </div>
 

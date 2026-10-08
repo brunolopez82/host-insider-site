@@ -44,7 +44,7 @@ export function Academy() {
       </div>
 
       <FadeIn delay={0.3} className="mt-10">
-        <p className="font-accent text-2xl text-orange mb-5">
+        <p className="font-accent text-2xl accent-ink mb-5">
           Founding members help shape what gets built next.
         </p>
         <PrimaryCTA>Join Host Insider Pro</PrimaryCTA>

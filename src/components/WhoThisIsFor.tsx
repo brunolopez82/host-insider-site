@@ -36,7 +36,7 @@ export function WhoThisIsFor() {
                   key={item}
                   className="flex items-start gap-3 text-text-muted text-base"
                 >
-                  <span className="text-orange mt-0.5 shrink-0 font-bold">
+                  <span className="accent-ink mt-0.5 shrink-0 font-bold">
                     ✓
                   </span>
                   {item}
