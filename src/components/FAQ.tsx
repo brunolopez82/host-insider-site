@@ -34,7 +34,7 @@ const FAQS = [
   },
   {
     q: "Can I cancel?",
-    a: "Yes. You start with a 7-day free trial, so you can look around before you're charged anything. After that it's a monthly subscription and you can cancel any time from your Skool account settings.",
+    a: "Yes. It is a monthly subscription and you can cancel any time from your Skool account settings.",
   },
 ];
 

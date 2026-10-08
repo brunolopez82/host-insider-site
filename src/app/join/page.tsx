@@ -16,7 +16,7 @@ const PROOF = [
   { n: "Monthly", d: "Live Host Hangout" },
 ];
 
-const MICRO = ["Hosts only", "7-day free trial", "Cancel anytime"];
+const MICRO = ["Hosts only", "No guests in the room", "Cancel anytime"];
 
 export default function JoinSqueeze() {
   return (
@@ -61,9 +61,6 @@ export default function JoinSqueeze() {
                 Join Host Insider Pro
                 <span aria-hidden>→</span>
               </CleanCTA>
-              <span className="text-[color:var(--fg-muted)] text-sm font-medium">
-                $5/month · Locked for life
-              </span>
               <p className="text-[color:var(--fg-muted)] text-[13px] flex flex-wrap justify-center items-center gap-x-2.5 gap-y-1">
                 {MICRO.map((m, i) => (
                   <span key={m} className="flex items-center gap-2.5">

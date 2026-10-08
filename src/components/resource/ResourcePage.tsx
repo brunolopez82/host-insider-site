@@ -229,9 +229,6 @@ export default function ResourcePage({ resource }: { resource: Resource }) {
                 <PrimaryCTA className="text-[15px] px-9 py-4">
                   Join Host Insider Pro →
                 </PrimaryCTA>
-                <span className="text-[color:var(--fg-muted)] text-[13px]">
-                  7-day free trial. First 10 members join free, for life.
-                </span>
               </div>
             </div>
 

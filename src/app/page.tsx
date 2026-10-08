@@ -10,7 +10,7 @@ const PROOF = [
 const REMOVES = [
   "Hosts only. No guests, no arguments.",
   "I personally reply to every post.",
-  "7-day free trial. Cancel anytime.",
+  "Cancel anytime.",
 ];
 
 function CtaBlock() {
@@ -19,9 +19,6 @@ function CtaBlock() {
       <PrimaryCTA className="text-[15px] px-9 py-4">
         Join Host Insider Pro →
       </PrimaryCTA>
-      <p className="mt-3.5 text-white/40 text-[13px]">
-        7-day free trial. First 10 members join free, for life.
-      </p>
     </div>
   );
 }
