@@ -1,0 +1,42 @@
+#!/usr/bin/env sh
+# Push every commit, so Vercel builds it and hostinsider.app updates itself.
+#
+# Lives in .githooks rather than .git/hooks and is wired up with
+#   git config core.hooksPath .githooks
+# so it is versioned with the site instead of being invisible and lost on the
+# next clone.
+#
+# This does not build first, on purpose. A failed Vercel build never replaces
+# the running production deployment, so pushing an unfinished commit cannot
+# take the site down — and a hook that took a minute would just get disabled.
+# Run ../ship.sh when you want the build verified before anything leaves.
+#
+# Escape hatch for work in progress:
+#   SKIP_PUSH=1 git commit -m "wip"
+
+if [ -n "$SKIP_PUSH" ]; then
+  echo "post-commit: SKIP_PUSH set — not pushing."
+  exit 0
+fi
+
+if ! git remote get-url origin >/dev/null 2>&1; then
+  echo "post-commit: no 'origin' remote — nothing to push."
+  exit 0
+fi
+
+branch=$(git rev-parse --abbrev-ref HEAD)
+if [ "$branch" = "HEAD" ]; then
+  echo "post-commit: detached HEAD — not pushing."
+  exit 0
+fi
+
+echo "post-commit: pushing $branch to origin..."
+if git push --quiet origin "$branch"; then
+  echo "post-commit: pushed. Vercel deploys from here."
+else
+  echo "post-commit: push FAILED — run 'git push' once you are back online." >&2
+fi
+
+# Always succeed: the commit itself is already made and must not be undone by
+# a network problem.
+exit 0

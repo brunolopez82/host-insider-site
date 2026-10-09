@@ -1,0 +1,5 @@
+# Shell scripts and git hooks must keep LF endings. Git was converting them to
+# CRLF on this Windows checkout, which makes them unrunnable anywhere else —
+# a CRLF shebang line fails with "bad interpreter: no such file or directory".
+*.sh text eol=lf
+.githooks/* text eol=lf
