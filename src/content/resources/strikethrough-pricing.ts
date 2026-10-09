@@ -285,8 +285,8 @@ export const strikethroughPricing: Resource = {
           kind: "prose",
           paras: [
             "Not a support issue is not the same as not a rule. These are two different questions and it is worth keeping them apart.",
-            "In the European Union, announcing a price reduction carries a specific requirement. Under the Omnibus Directive, when you advertise a discount you must show the prior price — and that prior price has to be <strong>the lowest price you actually charged in the 30 days before the reduction.</strong>",
-            "That rule exists independently of anything Airbnb does. It is consumer law, it applies to you as a trader, and it is why the 30-day reference period exists at all.",
+            "Wherever you host, advertising a crossed-out price that nobody actually paid is treated as misleading. The wording differs by market; the principle does not. <strong>A former price has to be a price you genuinely charged, recently.</strong>",
+            "The specifics are worth knowing for your own market. In the United States, the position is that a former price must be bona fide — openly offered for a reasonable period, not invented for the comparison. The United Kingdom and Australia reach the same place through their own consumer rules. The European Union is the most prescriptive, requiring the reference to be the lowest price charged in the previous 30 days.",
             "In practice this mostly resolves itself, because the tactic does not work well enough to produce a meaningfully fake discount in the first place. But it is the reason I would not build a pricing strategy on manufacturing reductions, even if the platform lets you try.",
           ],
         },
@@ -387,10 +387,10 @@ export const strikethroughPricing: Resource = {
               ],
             },
             {
-              q: "What about the EU rule on discounts?",
+              q: "Are there rules about advertising discounts?",
               a: [
-                "It is real and it applies to you as a trader if you host in the EU. An advertised reduction has to reference the lowest price you actually charged in the previous 30 days.",
-                "In practice it rarely bites here, because the tactic does not produce a large enough fake reduction to matter.",
+                "Yes, in every market you are likely to host in, with different wording and the same intent: a crossed-out price must be one you genuinely charged, recently. The European Union is the most prescriptive, naming the lowest price from the previous 30 days.",
+                "In practice it rarely bites here, because the tactic does not produce a large enough fake reduction to matter. Worth checking your own market if you plan to advertise reductions seriously.",
               ],
             },
           ],
@@ -444,7 +444,7 @@ export const strikethroughPricing: Resource = {
     ],
   },
   sources:
-    "Airbnb’s discount mechanics — the 60-day median reference, the highest-booked-price cap and the eligibility windows — are described in Airbnb’s own resources on combining discounts and rule sets. The non-refundable option, its fixed 10% reduction and its cancellation terms are documented in Airbnb’s help article on offering a non-refundable option. The EU requirement comes from the Omnibus Directive, which amends the Price Indication Directive.",
+    "Airbnb’s discount mechanics — the 60-day median reference, the highest-booked-price cap and the eligibility windows — are described in Airbnb’s own resources on combining discounts and rule sets. The non-refundable option, its fixed 10% reduction and its cancellation terms are documented in Airbnb’s help article on offering a non-refundable option. Rules on advertised price reductions are set by national consumer regulators and differ by market; the European requirement to reference the lowest price of the previous 30 days comes from the Omnibus Directive, which amends the Price Indication Directive. Check the rules that apply where you host.",
   disclaimer:
     "<strong>Not legal or tax advice.</strong> I do not speak for Airbnb, I share no one’s case details, and I have no influence over any decision on any account. What I have is pattern recognition from working the support side.",
 };
