@@ -62,9 +62,9 @@ export function FoundingMembers() {
             <p className="text-[color:var(--fg-muted)] text-sm mb-1">
               After the first 10
             </p>
-            <p className="text-2xl font-extrabold mb-1">$5/month</p>
+            <p className="text-2xl font-extrabold mb-1">$7/month</p>
             <p className="text-[color:var(--fg-muted)] text-sm mb-8">
-              Your founding price is locked in forever.
+              You keep that rate for as long as your membership stays active.
             </p>
             <PrimaryCTA className="w-full">Join Host Insider Pro</PrimaryCTA>
           </Card>
