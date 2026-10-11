@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import {
   Card,
   Eyebrow,
@@ -9,6 +10,12 @@ import {
   Section,
 } from "@/components/ui";
 import * as C from "@/content/home";
+import {
+  InsideOverview,
+  LessonOnPhone,
+  StatBand,
+  TwoViewsDiagram,
+} from "@/components/home/Visuals";
 
 /* Paragraphs carry inline <strong>, same convention as the resource pages. */
 function Prose({ paras, className = "" }: { paras: string[]; className?: string }) {
@@ -58,6 +65,14 @@ export function HomeHero() {
           </p>
         </FadeIn>
       </div>
+
+      {/* Numbers directly under the hero: the only hard facts on the page,
+          placed where a skimmer meets them before any argument. */}
+      <FadeIn delay={0.24}>
+        <div className="mt-16">
+          <StatBand />
+        </div>
+      </FadeIn>
     </Section>
   );
 }
@@ -117,15 +132,84 @@ export function HomeLiveToday() {
         ))}
       </div>
 
-      <FadeIn delay={0.3}>
-        <div className="mt-10">
-          <a
-            href="/free/strikethrough-pricing/"
-            className="inline-flex items-center gap-2 font-semibold accent-ink hover-accent-ink underline underline-offset-4"
-          >
-            Read a published lesson first — no signup
-            <span aria-hidden>→</span>
-          </a>
+      {/* The strongest proof on the page: a real published lesson, shown as it
+          reads on a phone, with a link to the live page so nothing has to be
+          taken on trust. */}
+      <div className="mt-16 grid gap-10 lg:grid-cols-[0.8fr_1fr] lg:gap-14 lg:items-center">
+        <FadeIn>
+          <LessonOnPhone />
+        </FadeIn>
+
+        <FadeIn delay={0.1}>
+          <div>
+            <Eyebrow>Judge it before you pay</Eyebrow>
+            <Heading className="!text-2xl md:!text-4xl">
+              Five lessons are already live. Read one.
+            </Heading>
+            <Lead className="mt-5">
+              Not a preview, not a lead magnet behind an email form. They are
+              finished pages on this domain, free, and they are the most honest
+              sample of what the material is like. If the writing is not useful
+              to you, you have lost nothing.
+            </Lead>
+            <Link
+              href="/free/strikethrough-pricing/"
+              className="mt-7 inline-flex items-center gap-2 font-semibold accent-ink hover-accent-ink underline underline-offset-4"
+            >
+              Read the pricing lesson — no signup
+              <span aria-hidden>→</span>
+            </Link>
+          </div>
+        </FadeIn>
+      </div>
+    </Section>
+  );
+}
+
+/* ───────────────────────────────── Method: the actual differentiator */
+export function HomeMethod() {
+  return (
+    <Section tone="peach">
+      <div className="max-w-[760px]">
+        <FadeIn>
+          <Eyebrow>How every lesson is built</Eyebrow>
+          <Heading>Taught one way. Lived another.</Heading>
+          <Lead className="mt-5">
+            Each lesson states the version you can find anywhere, then the
+            version that comes from having read thousands of these cases. The
+            two are kept separate on purpose, so you can see exactly which part
+            is common knowledge and which part is not.
+          </Lead>
+        </FadeIn>
+      </div>
+
+      <FadeIn delay={0.12}>
+        <div className="mt-12 max-w-[860px]">
+          <TwoViewsDiagram />
+        </div>
+      </FadeIn>
+    </Section>
+  );
+}
+
+/* ───────────────────────────────── Everything in one frame */
+export function HomeOverview() {
+  return (
+    <Section tone="peach">
+      <div className="max-w-[760px]">
+        <FadeIn>
+          <Eyebrow>At a glance</Eyebrow>
+          <Heading>What the membership covers</Heading>
+          <Lead className="mt-5">
+            Six things, stated without inflation. Some are live now, some are
+            being written — the sections above say which is which.
+          </Lead>
+        </FadeIn>
+      </div>
+
+      <FadeIn delay={0.12}>
+        <div className="mt-12 max-w-[980px]">
+          <InsideOverview />
         </div>
       </FadeIn>
     </Section>
@@ -135,7 +219,7 @@ export function HomeLiveToday() {
 /* ───────────────────────────────── The community image */
 export function HomeRoom() {
   return (
-    <Section tone="peach">
+    <Section tone="off">
       <div className="grid gap-10 lg:grid-cols-2 lg:gap-14 lg:items-center">
         <FadeIn>
           <Eyebrow>The room itself</Eyebrow>

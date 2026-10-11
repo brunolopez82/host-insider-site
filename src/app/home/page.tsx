@@ -3,7 +3,9 @@ import {
   HomeHero,
   HomeProblem,
   HomeLiveToday,
+  HomeOverview,
   HomeRoom,
+  HomeMethod,
   HomeBeingBuilt,
   HomeCredibility,
   HomeNoProof,
@@ -35,7 +37,9 @@ export default function HomePage() {
       <HomeHero />
       <HomeProblem />
       <HomeLiveToday />
+      <HomeOverview />
       <HomeRoom />
+      <HomeMethod />
       <HomeBeingBuilt />
       <HomeCredibility />
       <HomeNoProof />
