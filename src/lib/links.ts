@@ -7,3 +7,11 @@
  * value belongs here.
  */
 export const SKOOL_URL = "https://www.skool.com/host-insider-pro-3263/about";
+
+/**
+ * About Page da comunidade lusófona (Anfitriões Sérios) no Skool.
+ * Vazio até existir o link final: a página /pt/ não aponta para a comunidade
+ * inglesa, por isso, sem este valor, os botões ficam inativos em vez de enviarem
+ * quem lê em português para o sítio errado.
+ */
+export const SKOOL_URL_PT = "";
