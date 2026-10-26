@@ -19,12 +19,12 @@ const PROOF = [
     d: "De anfitriões ajudados individualmente.",
   },
   {
-    n: "Dezenas",
-    d: "De anfitriões ajudados diretamente a otimizar anúncios e ganhar mais visibilidade.",
+    n: "Anúncios",
+    d: "Ajudei a otimizá-los para ganharem mais visibilidade.",
   },
   {
     n: "Do zero",
-    d: "Ajudei individualmente anfitriões que estavam a começar, para iniciarem com clareza e sem sustos.",
+    d: "Também ajudei quem estava a começar, para iniciar com clareza e sem sustos.",
   },
 ];
 
