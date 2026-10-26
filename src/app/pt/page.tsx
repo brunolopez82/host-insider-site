@@ -10,21 +10,6 @@ export const metadata: Metadata = {
   robots: { index: false, follow: false },
 };
 
-const PROOF = [
-  {
-    n: "3+ anos",
-    d: "Em Airbnb Resolutions, a tratar disputas entre anfitriões e hóspedes.",
-  },
-  {
-    n: "3.000+",
-    d: "Disputas reais mediadas, de onde vêm os padrões que ensinamos.",
-  },
-  {
-    n: "Só anfitriões",
-    d: "Sem hóspedes na sala, as conversas mantêm-se úteis e sem discussões.",
-  },
-];
-
 const REMOVES = [
   "Só anfitriões. Sem hóspedes, sem discussões.",
   "O Bruno participa nas conversas.",
@@ -154,54 +139,31 @@ export default function PaginaInicial() {
       </section>
 
       {/* Autoridade */}
-      <section className="px-6 py-16 md:py-20 border-t border-white/[0.07]">
-        <div className="max-w-[1000px] mx-auto">
-          <FadeIn>
-            <h2 className="text-center text-2xl md:text-[32px] font-extrabold tracking-[-0.03em]">
-              Porque ouvir o Bruno?
-            </h2>
-
-            <div className="mt-10 flex flex-col md:flex-row items-center md:items-start gap-8 md:gap-11 max-w-[760px] mx-auto">
-              <div className="relative w-[150px] h-[150px] shrink-0 rounded-2xl overflow-hidden border border-white/10">
-                <Image
-                  src="/images/avatar.webp"
-                  alt="Bruno, fundador da comunidade Anfitriões Sérios"
-                  fill
-                  style={{ objectFit: "cover", objectPosition: "center" }}
-                />
-              </div>
-
-              <div className="text-center md:text-left">
-                <p className="text-white/70 text-lg leading-relaxed">
-                  Sou o Bruno. Trabalhei mais de três anos em Airbnb
-                  Resolutions, a mediar disputas entre anfitriões e hóspedes. A
-                  maioria dos problemas não é aleatória: segue padrões. Esta
-                  comunidade transforma esses padrões em orientação que pode
-                  usar.
-                </p>
-                <p className="mt-4 text-white/45 text-[15px] leading-relaxed">
-                  Sem truques secretos. Sem manipular o suporte. Sem resultados
-                  garantidos.
-                </p>
-              </div>
+      <section className="px-6 py-14 md:py-16 border-t border-white/[0.07]">
+        <FadeIn>
+          <div className="max-w-[820px] mx-auto flex flex-col md:flex-row items-center gap-8 md:gap-12">
+            <div className="relative w-[220px] h-[220px] md:w-[260px] md:h-[260px] shrink-0 rounded-3xl overflow-hidden border border-white/10">
+              <Image
+                src="/images/avatar.webp"
+                alt="Bruno, fundador da comunidade Anfitriões Sérios"
+                fill
+                style={{ objectFit: "cover", objectPosition: "center" }}
+              />
             </div>
-          </FadeIn>
 
-          <FadeIn delay={0.15}>
-            <div className="mt-14 grid sm:grid-cols-3 gap-9 max-w-[880px] mx-auto text-center sm:text-left">
-              {PROOF.map((p) => (
-                <div key={p.n}>
-                  <p className="brand-gradient-text text-[28px] font-extrabold tracking-[-0.02em]">
-                    {p.n}
-                  </p>
-                  <p className="mt-2 text-white/45 text-sm leading-relaxed">
-                    {p.d}
-                  </p>
-                </div>
-              ))}
+            <div className="text-center md:text-left">
+              <h2 className="text-2xl md:text-[30px] font-extrabold tracking-[-0.03em]">
+                Porque ouvir o Bruno?
+              </h2>
+              <p className="mt-4 text-white/70 text-lg leading-relaxed">
+                Mais de 3 anos no Airbnb Resolutions e mais de 3.000 disputas
+                reais entre anfitriões e hóspedes. Ajudei centenas de
+                anfitriões a otimizar anúncios, aumentar rendimentos e receber
+                mais reservas.
+              </p>
             </div>
-          </FadeIn>
-        </div>
+          </div>
+        </FadeIn>
       </section>
 
       {/* CTA final */}
