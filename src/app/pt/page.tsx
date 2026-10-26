@@ -95,7 +95,7 @@ export default function PaginaInicial() {
             </h1>
 
             <p className="mt-7 text-white/60 text-lg md:text-xl leading-relaxed max-w-[640px] mx-auto">
-              Uma comunidade privada, paga e só de anfitriões. Traga a situação
+              Uma comunidade premium, privada e só de anfitriões. Traga a situação
               em que está preso e receba uma resposta direta, de quem mediou
               mais de 3.000 disputas entre anfitriões e hóspedes.
             </p>
