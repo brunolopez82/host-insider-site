@@ -68,7 +68,7 @@ function Cta({ children }: { children: React.ReactNode }) {
 
 export default function PaginaInicial() {
   return (
-    <main className="tone-dark min-h-screen flex flex-col text-[color:var(--fg)]">
+    <main className="tone-pt min-h-screen flex flex-col text-[color:var(--fg)]">
       <header className="px-6 pt-7">
         <div className="max-w-[1000px] mx-auto flex items-center gap-2.5">
           <Image

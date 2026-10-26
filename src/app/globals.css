@@ -151,3 +151,40 @@ h3 {
 .hover-accent-ink:hover {
   color: var(--color-orange-ink);
 }
+
+/* Marca Anfitriões Sérios (PT): fundo claro, azul-marinho, botão laranja */
+.tone-pt {
+  --fg: #0f1f3d;
+  --fg-muted: rgba(15, 31, 61, 0.7);
+  --card-bg: #ffffff;
+  --card-border: #dde3ee;
+  --divider: #dde3ee;
+  background: #f6f8fc;
+  color: #0f1f3d;
+}
+.tone-pt h1,
+.tone-pt h2,
+.tone-pt h3,
+.tone-pt .font-bold,
+.tone-pt .font-extrabold {
+  color: #0f1f3d;
+}
+.tone-pt [class*="text-white/"] {
+  color: rgba(15, 31, 61, 0.75);
+}
+.tone-pt [class*="border-white/"] {
+  border-color: #dde3ee;
+}
+.tone-pt .brand-gradient-text {
+  background: none;
+  -webkit-background-clip: initial;
+  background-clip: initial;
+  color: #0f1f3d;
+}
+.tone-pt h1 .brand-gradient-text {
+  color: #c7501e;
+}
+.tone-pt a[style*="orange-deep"],
+.tone-pt a[style*="orange-deep"] * {
+  color: #ffffff;
+}
