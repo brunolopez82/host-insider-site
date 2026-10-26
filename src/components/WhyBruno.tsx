@@ -24,7 +24,7 @@ export function WhyBruno() {
             <Lead>I&apos;m Bruno.</Lead>
             <Lead>
               More than 3 years helping hosts handle problems and prepare to
-              avoid them. I&apos;ve helped hundreds of hosts one-on-one, and
+              avoid them. I&apos;ve helped dozens of hosts one-on-one, and
               now that support is available inside the community.
             </Lead>
             <Lead>

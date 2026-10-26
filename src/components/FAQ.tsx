@@ -22,7 +22,7 @@ const FAQS = [
   },
   {
     q: "What does \"helping hosts\" mean?",
-    a: "Bruno has more than 3 years of experience helping hosts handle problems and prepare to avoid them, and has helped hundreds of hosts one-on-one. The community is independent, has no connection to Airbnb, and does not share confidential information, internal-only procedures or privileged access.",
+    a: "Bruno has more than 3 years of experience helping hosts handle problems and prepare to avoid them, and has helped dozens of hosts one-on-one. The community is independent, has no connection to Airbnb, and does not share confidential information, internal-only procedures or privileged access.",
   },
   {
     q: "Will you help me contact Airbnb Support?",

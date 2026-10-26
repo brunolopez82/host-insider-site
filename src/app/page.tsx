@@ -15,7 +15,7 @@ const PROOF = [
     d: "A ajudar anfitriões.",
   },
   {
-    n: "Centenas",
+    n: "Dezenas",
     d: "De anfitriões ajudados individualmente.",
   },
   {
@@ -175,7 +175,7 @@ export default function PaginaInicial() {
               </h2>
               <p className="mt-4 text-white/70 text-lg leading-relaxed">
                 Mais de 3 anos a ajudar anfitriões a lidar com problemas e a
-                preparar-se para os evitar. Ajudei centenas de anfitriões
+                preparar-se para os evitar. Ajudei dezenas de anfitriões
                 individualmente, e agora esse apoio está acessível na
                 comunidade.
               </p>

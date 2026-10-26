@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 
 const PROOF = [
   { n: "3+ yrs", d: "Helping hosts" },
-  { n: "Hundreds", d: "Of hosts helped one-on-one" },
+  { n: "Dozens", d: "Of hosts helped one-on-one" },
   { n: "Hosts only", d: "No guests in the room" },
   { n: "Monthly", d: "Live Host Hangout" },
 ];

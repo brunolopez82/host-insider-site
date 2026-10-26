@@ -28,7 +28,7 @@ export type AdVariant = {
 
 const PROOF_CREDENTIAL = [
   { n: "3+ yrs", d: "Helping hosts" },
-  { n: "Hundreds", d: "Of hosts helped one-on-one" },
+  { n: "Dozens", d: "Of hosts helped one-on-one" },
   { n: "Hosts only", d: "No guests in the room" },
   { n: "Monthly", d: "Live Host Hangout" },
 ];
@@ -53,7 +53,7 @@ export const AD_VARIANTS: AdVariant[] = [
     headline: "I’ve spent 3+ years helping hosts through",
     highlight: "problems",
     headlineTail: "like yours",
-    sub: "Then I built a community for hosts. Bring the guest situation you’re stuck on and get an answer from someone who has helped hundreds of hosts one-on-one.",
+    sub: "Then I built a community for hosts. Bring the guest situation you’re stuck on and get an answer from someone who has helped dozens of hosts one-on-one.",
     micro: ["Pattern recognition, not inside access"],
     cta: "Join Host Insider Pro",
     offer: "Private, hosts-only community",
@@ -71,7 +71,7 @@ export const AD_VARIANTS: AdVariant[] = [
     offer: "Private, hosts-only community",
     proof: [
       { n: "3+ yrs", d: "Helping hosts" },
-      { n: "Hundreds", d: "Of hosts helped one-on-one" },
+      { n: "Dozens", d: "Of hosts helped one-on-one" },
       { n: "Monthly", d: "Live Host Hangout" },
       { n: "Hosts only", d: "No guests in the room" },
     ],

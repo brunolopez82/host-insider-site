@@ -145,7 +145,7 @@ export default function ResourcePage({ resource }: { resource: Resource }) {
             <span className="text-[15px] leading-tight">
               <strong className="block font-bold">Bruno Lopes</strong>
               <span className="text-[color:var(--fg-muted)]">
-                3+ years helping hosts · hundreds helped one-on-one
+                3+ years helping hosts · dozens helped one-on-one
               </span>
             </span>
           </div>
