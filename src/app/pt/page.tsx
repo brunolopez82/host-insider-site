@@ -25,7 +25,7 @@ const PROOF = [
   },
   {
     n: "Do zero",
-    d: "Ajudo também quem está a começar a iniciar com clareza e sem sustos.",
+    d: "Ajudei individualmente anfitriões que estavam a começar, para iniciarem com clareza e sem sustos.",
   },
 ];
 
@@ -195,6 +195,26 @@ export default function PaginaInicial() {
                 </p>
               </div>
             ))}
+          </div>
+        </FadeIn>
+      </section>
+
+      {/* Porque criei */}
+      <section className="px-6 py-14 md:py-16 border-t border-white/[0.07]">
+        <FadeIn>
+          <div className="max-w-[680px] mx-auto text-center">
+            <h2 className="text-2xl md:text-[30px] font-extrabold tracking-[-0.03em]">
+              Porque criei esta comunidade
+            </h2>
+            <p className="mt-5 text-white/70 text-lg leading-relaxed">
+              Quero ajudar o máximo de anfitriões possível, e ajudar um a um
+              não chega. Por isso criei um espaço onde as respostas ficam ao
+              alcance de todos.
+            </p>
+            <p className="mt-4 text-white/70 text-lg leading-relaxed">
+              Aqui é sem drama: foco no problema e na solução, e não em
+              discussões intermináveis sem solução prática.
+            </p>
           </div>
         </FadeIn>
       </section>
