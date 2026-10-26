@@ -21,8 +21,8 @@ const FAQS = [
     a: "Not yet. The Academy is intentionally being built with the founding members around real host needs.",
   },
   {
-    q: "What does \"inside Airbnb\" mean?",
-    a: "Bruno has more than 3 years of professional experience working in Airbnb's Resolutions team. The community does not share confidential information, internal-only procedures or privileged access.",
+    q: "What does \"helping hosts\" mean?",
+    a: "Bruno has more than 3 years of experience helping hosts handle problems and prepare to avoid them, and has helped hundreds of hosts one-on-one. The community is independent, has no connection to Airbnb, and does not share confidential information, internal-only procedures or privileged access.",
   },
   {
     q: "Will you help me contact Airbnb Support?",

@@ -1,8 +1,8 @@
 import { FadeIn, Section, Heading, Eyebrow, Lead } from "./ui";
 
 const TRUST_POINTS = [
-  { stat: "3+ yrs", label: "Inside Airbnb's Resolutions team" },
-  { stat: "3,000+", label: "Real host & guest disputes mediated" },
+  { stat: "3+ yrs", label: "Helping hosts" },
+  { stat: "Hundreds", label: "Of hosts helped one-on-one" },
   { stat: "Hosts only", label: "Positive, practical community" },
   { stat: "Fact-based", label: "No hype. No secret hacks." },
 ];

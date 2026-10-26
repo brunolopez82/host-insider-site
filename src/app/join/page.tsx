@@ -6,12 +6,12 @@ import { ACCENT_DISPLAY, ACCENT_INK, CleanCTA } from "@/components/CleanCTA";
 export const metadata: Metadata = {
   title: "Join Host Insider Pro",
   description:
-    "A private, hosts-only community run by a former member of Airbnb's Resolutions team. Bring the situation you're stuck on and get a straight answer.",
+    "A private, hosts-only community run by someone with more than 3 years helping hosts. Bring the situation you're stuck on and get a straight answer.",
 };
 
 const PROOF = [
-  { n: "3+ yrs", d: "Inside Airbnb Resolutions" },
-  { n: "3,000+", d: "Disputes mediated" },
+  { n: "3+ yrs", d: "Helping hosts" },
+  { n: "Hundreds", d: "Of hosts helped one-on-one" },
   { n: "Hosts only", d: "No guests in the room" },
   { n: "Monthly", d: "Live Host Hangout" },
 ];
@@ -47,8 +47,8 @@ export default function JoinSqueeze() {
               </h1>
 
               <p className="text-[color:var(--fg-muted)] text-lg md:text-xl leading-relaxed max-w-[36rem]">
-                A private, hosts-only community run by someone who spent three
-                years inside Airbnb&rsquo;s Resolutions team. Bring the guest
+                A private, hosts-only community run by someone with more than 3
+                years helping hosts. Bring the guest
                 situation you&rsquo;re stuck on and get a straight reply, not
                 fifty opinions.
               </p>

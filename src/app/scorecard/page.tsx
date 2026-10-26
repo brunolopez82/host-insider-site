@@ -7,7 +7,7 @@ import { Section, Eyebrow, Heading, Lead, FadeIn } from "@/components/ui";
 export const metadata: Metadata = {
   title: "Free Airbnb Listing Scorecard — Host Insider Pro",
   description:
-    "Score your Airbnb listing out of 100 across title, photos, cancellation policy, reviews, response time and pricing — and find out which fix is worth the most. Free, no account, built by a former Airbnb Resolutions agent.",
+    "Score your Airbnb listing out of 100 across title, photos, cancellation policy, reviews, response time and pricing — and find out which fix is worth the most. Free, no account, built by someone with more than 3 years helping hosts.",
   openGraph: {
     title: "Free Airbnb Listing Scorecard — Host Insider Pro",
     description:

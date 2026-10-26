@@ -19,7 +19,7 @@ import {
 export const metadata: Metadata = {
   title: "Host Insider Pro — a private community for Airbnb hosts",
   description:
-    "A private, hosts-only community for Airbnb hosts and co-hosts worldwide, run by a former Airbnb Resolutions agent who mediated 3,000+ disputes. Independent, with no guaranteed outcomes.",
+    "A private, hosts-only community for Airbnb hosts and co-hosts worldwide, run by someone with more than 3 years helping hosts, who has helped hundreds of hosts one-on-one. Independent, with no guaranteed outcomes.",
 };
 
 /**

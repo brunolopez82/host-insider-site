@@ -380,7 +380,7 @@ export const photoShotList: Resource = {
     heading: "The support view lives inside the community",
     paras: [
       "Everything above is the marketing view — and it is free, because you can research it. What you cannot research is what these same photos look like from the side that handles it when a guest is unhappy.",
-      "That is what Host Insider Pro is for: three years of patterns from inside Airbnb's Resolutions team, applied to the decisions you are making right now.",
+      "That is what Host Insider Pro is for: more than 3 years of helping hosts, applied to the decisions you are making right now.",
     ],
   },
   sources:

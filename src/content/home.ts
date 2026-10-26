@@ -60,7 +60,7 @@ export const liveToday: Panel[] = [
   },
   {
     title: "Questions answered by me",
-    body: "Post a situation, get a reply from someone who spent three years deciding cases like it. Where the answer is genuinely uncertain, you are told that rather than given false confidence.",
+    body: "Post a situation, get a reply from someone with more than 3 years helping hosts through situations like it. Where the answer is genuinely uncertain, you are told that rather than given false confidence.",
   },
   {
     title: "Monthly Host Hangout",
@@ -91,11 +91,11 @@ export const beingBuilt = {
 
 export const credibility = {
   eyebrow: "Where this comes from",
-  heading: "Three years deciding cases like yours, from the other side",
+  heading: "More than 3 years helping hosts through cases like yours",
   paras: [
-    "Before this community, I spent over three years on Airbnb's Resolutions team and handled more than 3,000 disputes between hosts and guests.",
+    "Before this community, I spent more than 3 years helping hosts handle problems and prepare to avoid them, and I have helped hundreds of hosts one-on-one.",
     "That shapes how this material is written: what tends to matter in a case, what is worth documenting before you need it, how to put a situation in writing clearly, and which parts of an outcome were never in your hands.",
-    "It does not mean members get confidential information, access to Airbnb staff, preferential treatment, or influence over any decision. It means the teaching comes from having read thousands of these, not from guessing what happens after you hit Submit.",
+    "It does not mean members get confidential information, access to Airbnb staff, preferential treatment, or influence over any decision. It means the teaching comes from having worked through these with hundreds of hosts, not from guessing what happens after you hit Submit.",
   ],
 };
 
@@ -113,7 +113,7 @@ export const objection = {
   heading: `Why pay anything when so much hosting advice is free?`,
   paras: [
     "Plenty of hosts share what they know generously, and some of it is genuinely good. If you are comfortable searching, and you have a reliable way to tell which advice applies to your property and your situation, you may not need this.",
-    "What you would be paying for is not information that exists nowhere else. It is a hosts-only room, a reply from someone who has read thousands of these cases, and lessons written to be used mid-problem rather than scrolled.",
+    "What you would be paying for is not information that exists nowhere else. It is a hosts-only room, a reply from someone who has helped hundreds of hosts one-on-one, and lessons written to be used mid-problem rather than scrolled.",
     `At ${PRICE} a month — about ${PRICE_PER_DAY} a day — the question is simply whether that is worth more to you than the time you currently spend sorting opinions. Nobody is claiming it pays for itself.`,
   ],
 };

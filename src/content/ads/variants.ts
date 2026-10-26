@@ -27,8 +27,8 @@ export type AdVariant = {
 };
 
 const PROOF_CREDENTIAL = [
-  { n: "3+ yrs", d: "Inside Airbnb Resolutions" },
-  { n: "3,000+", d: "Disputes mediated" },
+  { n: "3+ yrs", d: "Helping hosts" },
+  { n: "Hundreds", d: "Of hosts helped one-on-one" },
   { n: "Hosts only", d: "No guests in the room" },
   { n: "Monthly", d: "Live Host Hangout" },
 ];
@@ -40,7 +40,7 @@ export const AD_VARIANTS: AdVariant[] = [
     badge: "★ Hosts only. No guests, no arguments.",
     headline: "You don’t have to figure out Airbnb",
     highlight: "on your own",
-    sub: "A private, hosts-only community run by someone who spent three years inside Airbnb’s Resolutions team. Bring the situation you’re stuck on and get a straight reply, not fifty opinions.",
+    sub: "A private, hosts-only community run by someone with more than 3 years helping hosts. Bring the situation you’re stuck on and get a straight reply, not fifty opinions.",
     micro: ["Hosts only", "Cancel anytime"],
     cta: "Join Host Insider Pro",
     offer: "Private, hosts-only community",
@@ -49,11 +49,11 @@ export const AD_VARIANTS: AdVariant[] = [
   {
     slug: "insider",
     angle: "Credential-led. Leads with the thing nobody can copy.",
-    badge: "★ Former Airbnb Resolutions team",
-    headline: "I spent three years on the",
-    highlight: "other side",
-    headlineTail: "of Airbnb support",
-    sub: "Then I built a community for hosts. Bring the guest situation you’re stuck on and get an answer from someone who watched three thousand of them resolve.",
+    badge: "★ 3+ years helping hosts",
+    headline: "I’ve spent 3+ years helping hosts through",
+    highlight: "problems",
+    headlineTail: "like yours",
+    sub: "Then I built a community for hosts. Bring the guest situation you’re stuck on and get an answer from someone who has helped hundreds of hosts one-on-one.",
     micro: ["Pattern recognition, not inside access"],
     cta: "Join Host Insider Pro",
     offer: "Private, hosts-only community",
@@ -65,13 +65,13 @@ export const AD_VARIANTS: AdVariant[] = [
     badge: "★ For the moment it goes wrong",
     headline: "Guest demanding a refund?",
     highlight: "Don’t reply yet.",
-    sub: "What you write in the next hour matters more than most hosts realise. A private community run by a former member of Airbnb’s Resolutions team, for exactly these moments.",
+    sub: "What you write in the next hour matters more than most hosts realise. A private community run by someone with more than 3 years helping hosts, for exactly these moments.",
     micro: ["Hosts only", "I reply to every post"],
     cta: "Get a straight answer",
     offer: "Private, hosts-only community",
     proof: [
-      { n: "3+ yrs", d: "Inside Airbnb Resolutions" },
-      { n: "3,000+", d: "Disputes mediated" },
+      { n: "3+ yrs", d: "Helping hosts" },
+      { n: "Hundreds", d: "Of hosts helped one-on-one" },
       { n: "Monthly", d: "Live Host Hangout" },
       { n: "Hosts only", d: "No guests in the room" },
     ],

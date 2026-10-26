@@ -241,7 +241,7 @@ export const cancellationPolicy: Resource = {
           awaiting: true,
           label: "The same point, from the other side",
           paras: [
-            "Everything above is researchable, so I wrote it. This is the half that is not, and on this topic it is worth more than on any lesson so far — cancellations are the thing a Resolutions team actually handles.",
+            "Everything above is researchable, so I wrote it. This is the half that is not, and on this topic it is worth more than on any lesson so far — cancellations are one of the things hosts most often need help with.",
             "What I need from you:",
           ],
           questions: [
@@ -382,10 +382,10 @@ export const cancellationPolicy: Resource = {
   ],
   closing: {
     eyebrow: "The other half of this lesson",
-    heading: "Cancellations are exactly what a Resolutions team does",
+    heading: "Cancellations are where experience helps most",
     paras: [
       "Everything above is researchable, which is why it is free. What you cannot research is what a cancellation looks like from the desk that handles it — what gets waived, what does not, and what hosts consistently get wrong about their own policy.",
-      "That is what Host Insider Pro is: three years of patterns from inside Airbnb's Resolutions team, applied to the decisions you are making right now.",
+      "That is what Host Insider Pro is: more than 3 years of helping hosts, applied to the decisions you are making right now.",
     ],
   },
   sources:

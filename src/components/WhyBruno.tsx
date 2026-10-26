@@ -23,9 +23,9 @@ export function WhyBruno() {
           <div className="mt-6 space-y-4 max-w-2xl">
             <Lead>I&apos;m Bruno.</Lead>
             <Lead>
-              For more than 3 years, I worked inside Airbnb&apos;s Resolutions
-              team, helping handle difficult situations between hosts and
-              guests. Over that time, I mediated 3,000+ real disputes.
+              More than 3 years helping hosts handle problems and prepare to
+              avoid them. I&apos;ve helped hundreds of hosts one-on-one, and
+              now that support is available inside the community.
             </Lead>
             <Lead>
               That experience taught me something important: most hosting

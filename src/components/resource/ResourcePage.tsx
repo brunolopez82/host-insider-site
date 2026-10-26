@@ -145,8 +145,7 @@ export default function ResourcePage({ resource }: { resource: Resource }) {
             <span className="text-[15px] leading-tight">
               <strong className="block font-bold">Bruno Lopes</strong>
               <span className="text-[color:var(--fg-muted)]">
-                3 years inside Airbnb&rsquo;s Resolutions team · 3,000+ disputes
-                mediated
+                3+ years helping hosts · hundreds helped one-on-one
               </span>
             </span>
           </div>

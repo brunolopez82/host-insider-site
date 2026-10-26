@@ -176,7 +176,7 @@ export function HomeMethod() {
           <Heading>Taught one way. Lived another.</Heading>
           <Lead className="mt-5">
             Each lesson states the version you can find anywhere, then the
-            version that comes from having read thousands of these cases. The
+            version that comes from having worked through these cases with hundreds of hosts. The
             two are kept separate on purpose, so you can see exactly which part
             is common knowledge and which part is not.
           </Lead>
@@ -316,7 +316,7 @@ export function HomeCredibility() {
           >
             <Image
               src="/images/home/presentation.webp"
-              alt="Former Airbnb Resolutions team: over three years on the other side of Airbnb, and more than 3,000 disputes mediated."
+              alt="More than 3 years helping hosts, and hundreds of hosts helped one-on-one."
               width={1400}
               height={788}
               sizes="(min-width: 1024px) 520px, 100vw"

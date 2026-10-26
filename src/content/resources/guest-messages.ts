@@ -272,7 +272,7 @@ export const guestMessages: Resource = {
           awaiting: true,
           label: "The same point, from the other side",
           paras: [
-            "This is the lesson where your half is worth the most, because messages are the thing a Resolutions desk actually reads. Everything above I could research. This I cannot.",
+            "This is the lesson where your half is worth the most, because messages are the thing that matters most when something goes wrong. Everything above I could research. This I cannot.",
             "What I need from you:",
           ],
           questions: [
@@ -366,7 +366,7 @@ export const guestMessages: Resource = {
     heading: "Your messages are the evidence, before you need them",
     paras: [
       "Everything above is researchable, which is why it is free. What you cannot research is what those messages look like to the person reading them after something has gone wrong — which ones help, and which ones a host wishes they had written differently.",
-      "That is what Host Insider Pro is: three years of patterns from inside Airbnb's Resolutions team, applied to the decisions you are making right now.",
+      "That is what Host Insider Pro is: more than 3 years of helping hosts, applied to the decisions you are making right now.",
     ],
   },
   sources:

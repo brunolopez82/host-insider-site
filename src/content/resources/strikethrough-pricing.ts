@@ -440,7 +440,7 @@ export const strikethroughPricing: Resource = {
     heading: "The support view is why this one reads differently",
     paras: [
       "Most pricing advice would have told you this tactic was dangerous. It is not. Knowing the difference between a real risk and a loud warning is the kind of thing you only get from having sat on the other side of it.",
-      "That is what Host Insider Pro is: three years of patterns from inside Airbnb’s Resolutions team, applied to the decisions you are making right now.",
+      "That is what Host Insider Pro is: more than 3 years of helping hosts, applied to the decisions you are making right now.",
     ],
   },
   sources:

@@ -17,7 +17,7 @@ import { FAQ } from "@/components/FAQ";
 export const metadata: Metadata = {
   title: "What's Inside — Host Insider Pro",
   description:
-    "Everything inside Host Insider Pro: listing optimization, pricing, AI and automation, host protection, the Academy, and the Monthly Host Hangout. Built by a former Airbnb Resolutions agent.",
+    "Everything inside Host Insider Pro: listing optimization, pricing, AI and automation, host protection, the Academy, and the Monthly Host Hangout. Built by someone with more than 3 years helping hosts.",
 };
 
 export default function StartPage() {

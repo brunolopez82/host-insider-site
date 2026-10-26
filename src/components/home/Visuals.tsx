@@ -93,8 +93,8 @@ export function PhoneFrame({
    Only numbers that are verifiable: time served, cases handled, lessons
    actually published, and modules that exist as a written plan. */
 const STATS = [
-  { n: "3+", label: "Years inside Airbnb Resolutions" },
-  { n: "3,000+", label: "Disputes mediated" },
+  { n: "3+", label: "Years helping hosts" },
+  { n: "Hundreds", label: "Of hosts helped one-on-one" },
   { n: "5", label: "Lessons published and free to read" },
   { n: "8", label: "Modules planned, none hidden" },
 ];

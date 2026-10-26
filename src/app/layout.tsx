@@ -17,7 +17,7 @@ const caveat = Caveat({
 export const metadata: Metadata = {
   title: "Anfitriões Sérios — Comunidade premium para anfitriões",
   description:
-    "Uma comunidade premium, privada e só de anfitriões, com orientação de quem mediou mais de 3.000 disputas em Airbnb Resolutions.",
+    "Uma comunidade premium, privada e só de anfitriões, com orientação de quem tem mais de 3 anos a ajudar anfitriões a lidar com problemas.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

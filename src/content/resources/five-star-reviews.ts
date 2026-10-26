@@ -391,10 +391,10 @@ Safe travels,
   ],
   closing: {
     eyebrow: "The other half of this lesson",
-    heading: "Review removal is Resolutions territory",
+    heading: "Review removal is where experience matters most",
     paras: [
       "Everything above is published policy, which is why it is free. What you cannot research is which removal requests actually moved and which never stood a chance — and what the hosts who got there did differently.",
-      "That is what Host Insider Pro is: three years of patterns from inside Airbnb's Resolutions team, applied to the decisions you are making right now.",
+      "That is what Host Insider Pro is: more than 3 years of helping hosts, applied to the decisions you are making right now.",
     ],
   },
   sources:

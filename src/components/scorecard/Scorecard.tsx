@@ -584,9 +584,8 @@ export default function Scorecard() {
           </h3>
           <p className="text-white/60 leading-relaxed mb-7 max-w-[46ch] mx-auto">
             Host Insider Pro is where the rest of them live, alongside hosts
-            working through the same list — and someone who spent three years
-            inside Airbnb&apos;s Resolutions team answering the questions this
-            report raises.
+            working through the same list — and someone with more than 3 years
+            helping hosts, answering the questions this report raises.
           </p>
           <Link
             href={SKOOL_URL}

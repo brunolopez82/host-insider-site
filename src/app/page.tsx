@@ -6,17 +6,17 @@ import { SKOOL_URL_PT } from "@/lib/links";
 export const metadata: Metadata = {
   title: "Anfitriões Sérios — Comunidade premium para anfitriões",
   description:
-    "Uma comunidade premium, privada e só de anfitriões. Saiba o que fazer quando um hóspede ameaça a avaliação, com orientação de quem mediou mais de 3.000 disputas em Airbnb Resolutions.",
+    "Uma comunidade premium, privada e só de anfitriões. Saiba o que fazer quando um hóspede ameaça a avaliação, com orientação de quem tem mais de 3 anos a ajudar anfitriões a lidar com problemas.",
 };
 
 const PROOF = [
   {
     n: "3+ anos",
-    d: "Em Airbnb Resolutions, a tratar disputas entre anfitriões e hóspedes.",
+    d: "A ajudar anfitriões.",
   },
   {
-    n: "3.000+",
-    d: "Disputas reais mediadas, de onde vêm os padrões que ensinamos.",
+    n: "Centenas",
+    d: "De anfitriões ajudados individualmente.",
   },
   {
     n: "Dezenas",
@@ -99,8 +99,8 @@ export default function PaginaInicial() {
 
             <p className="mt-7 text-white/60 text-lg md:text-xl leading-relaxed max-w-[640px] mx-auto">
               Uma comunidade premium, privada e só de anfitriões. Traga a situação
-              em que está preso e receba uma resposta direta, de quem mediou
-              mais de 3.000 disputas entre anfitriões e hóspedes.
+              em que está preso e receba uma resposta direta, de quem tem
+              mais de 3 anos a ajudar anfitriões.
             </p>
 
             <div className="mt-10 flex flex-col items-center">
@@ -174,9 +174,10 @@ export default function PaginaInicial() {
                 Porque ouvir o Bruno?
               </h2>
               <p className="mt-4 text-white/70 text-lg leading-relaxed">
-                Sou o Bruno. Passei anos a ver, por dentro, o que corre mal
-                entre anfitriões e hóspedes, e ajudo anfitriões a antecipar
-                problemas e a ter mais tranquilidade.
+                Mais de 3 anos a ajudar anfitriões a lidar com problemas e a
+                preparar-se para os evitar. Ajudei centenas de anfitriões
+                individualmente, e agora esse apoio está acessível na
+                comunidade.
               </p>
             </div>
           </div>
