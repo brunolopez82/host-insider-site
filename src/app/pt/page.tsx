@@ -10,6 +10,25 @@ export const metadata: Metadata = {
   robots: { index: false, follow: false },
 };
 
+const PROOF = [
+  {
+    n: "3+ anos",
+    d: "Em Airbnb Resolutions, a tratar disputas entre anfitriões e hóspedes.",
+  },
+  {
+    n: "3.000+",
+    d: "Disputas reais mediadas, de onde vêm os padrões que ensinamos.",
+  },
+  {
+    n: "Dezenas",
+    d: "De anfitriões ajudados diretamente a otimizar anúncios e ganhar mais visibilidade.",
+  },
+  {
+    n: "Do zero",
+    d: "Ajudo também quem está a começar a iniciar com clareza e sem sustos.",
+  },
+];
+
 const REMOVES = [
   "Só anfitriões. Sem hóspedes, sem discussões.",
   "O Bruno participa nas conversas.",
@@ -141,7 +160,7 @@ export default function PaginaInicial() {
       {/* Autoridade */}
       <section className="px-6 py-14 md:py-16 border-t border-white/[0.07]">
         <FadeIn>
-          <div className="max-w-[820px] mx-auto flex flex-col md:flex-row items-center gap-8 md:gap-12">
+          <div className="max-w-[880px] mx-auto flex flex-col md:flex-row items-center gap-8 md:gap-12">
             <div className="relative w-[220px] h-[220px] md:w-[260px] md:h-[260px] shrink-0 rounded-3xl overflow-hidden border border-white/10">
               <Image
                 src="/images/avatar.webp"
@@ -156,12 +175,26 @@ export default function PaginaInicial() {
                 Porque ouvir o Bruno?
               </h2>
               <p className="mt-4 text-white/70 text-lg leading-relaxed">
-                Mais de 3 anos no Airbnb Resolutions e mais de 3.000 disputas
-                reais entre anfitriões e hóspedes. Ajudei centenas de
-                anfitriões a otimizar anúncios, aumentar rendimentos e receber
-                mais reservas.
+                Sou o Bruno. Passei anos a ver, por dentro, o que corre mal
+                entre anfitriões e hóspedes, e ajudo anfitriões a antecipar
+                problemas e a ter mais tranquilidade.
               </p>
             </div>
+          </div>
+        </FadeIn>
+
+        <FadeIn delay={0.15}>
+          <div className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-8 max-w-[880px] mx-auto text-center md:text-left">
+            {PROOF.map((p) => (
+              <div key={p.n}>
+                <p className="brand-gradient-text text-[26px] md:text-[28px] font-extrabold tracking-[-0.02em]">
+                  {p.n}
+                </p>
+                <p className="mt-2 text-white/45 text-sm leading-relaxed">
+                  {p.d}
+                </p>
+              </div>
+            ))}
           </div>
         </FadeIn>
       </section>
