@@ -7,6 +7,17 @@ const nextConfig: NextConfig = {
   // of them — a redirect hop on every ad click, and a needless change to URLs
   // that are already published.
   trailingSlash: true,
+
+  // Hidden lead-magnet pages live under /g/<random code>/ and are shared only
+  // by direct message. Keep them and their PDFs out of search engines.
+  async headers() {
+    return [
+      {
+        source: "/g/:path*",
+        headers: [{ key: "X-Robots-Tag", value: "noindex, nofollow, noarchive" }],
+      },
+    ];
+  },
 };
 
 export default nextConfig;
