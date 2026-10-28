@@ -8,8 +8,18 @@ const nextConfig: NextConfig = {
   // that are already published.
   trailingSlash: true,
 
-  // Hidden lead-magnet pages live under /g/<random code>/ and are shared only
-  // by direct message. Keep them and their PDFs out of search engines.
+  // Hidden lead-magnet pages live under /g/<code>/ and are shared only by
+  // direct message. Each is a static public/g/<code>/index.html, served at the
+  // short folder URL. Keep them and their PDFs out of search engines.
+  async rewrites() {
+    return [{ source: "/g/:code/", destination: "/g/:code/index.html" }];
+  },
+  async redirects() {
+    return [
+      // First published address of the 5-star guide, before the short code.
+      { source: "/g/jCnQscKKaKuKNkUD/:path*", destination: "/g/4645/", permanent: false },
+    ];
+  },
   async headers() {
     return [
       {
