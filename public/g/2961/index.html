@@ -219,6 +219,59 @@ footer{padding-block:clamp(2.5rem,7vw,4rem) clamp(3.5rem,10vw,5.5rem);display:fl
 .tbl .sub{display:block;font-size:.82rem;font-weight:400;color:var(--dim);margin-top:2px;white-space:nowrap}
 .tbl td.n{white-space:nowrap}
 .fine-note{font-size:.88rem;color:var(--dim);line-height:1.6;margin-top:var(--s2)}
+/* v2: hero visual, inline CTA, stronger closing CTA */
+:root{--deep:#0F1F3D;--deep-2:#16294D;--deep-fg:#F6F8FC;--deep-dim:#AEBBD2;--deep-line:rgba(246,248,252,.12)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--deep:#16264A;--deep-2:#1C3060;--deep-line:rgba(246,248,252,.10)}}
+:root[data-theme="dark"]{--deep:#16264A;--deep-2:#1C3060;--deep-line:rgba(246,248,252,.10)}
+.hero-wrap{display:grid;grid-template-columns:1fr;gap:clamp(2rem,5vw,3.5rem);align-items:center;padding-block:calc(var(--head-h) + clamp(2.8rem,8vw,5rem)) clamp(2.5rem,7vw,4rem)}
+.hero-wrap .hero{padding:0;max-width:44rem}
+@media (min-width:1040px){.hero-wrap{grid-template-columns:minmax(0,1fr) 23rem}}
+.upd{display:inline-flex;align-items:center;gap:.5rem;font-family:var(--f-mono);font-size:.7rem;color:var(--gold-ink);background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:.32rem .75rem;align-self:flex-start}
+.upd i{width:7px;height:7px;border-radius:50%;background:var(--cta);display:block}
+.fee{background:var(--deep);color:var(--deep-fg);border-radius:var(--r-lg);padding:clamp(1.4rem,4vw,2rem);box-shadow:var(--shadow-lift);display:flex;flex-direction:column;gap:var(--s4)}
+.fee-h{font-family:var(--f-mono);font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;color:var(--deep-dim)}
+.fee-row{display:grid;grid-template-columns:1fr auto;gap:.15rem var(--s4);padding-top:var(--s4);border-top:1px solid var(--deep-line)}
+.fee-row:first-of-type{border-top:0;padding-top:0}
+.fee-row b{font-weight:600;font-size:1rem}
+.fee-row .v{font-family:var(--f-display);font-size:2rem;line-height:1;text-align:right;grid-row:span 2;align-self:center}
+.fee-row small{color:var(--deep-dim);font-size:.82rem}
+.fee-row .g{display:inline-block;margin-top:.1rem;font-size:.75rem;font-weight:700;padding:.12rem .55rem;border-radius:999px;background:var(--deep-2);color:var(--deep-fg);justify-self:end;grid-column:2}
+.fee-row.hi .g{background:var(--cta)}
+.fee-row.hi .v{color:#fff}
+.fee-foot{font-size:.76rem;color:var(--deep-dim);line-height:1.5}
+.mid-cta{display:flex;flex-direction:column;gap:var(--s4);align-items:flex-start;background:var(--raise);border-left:3px solid var(--cta);border-radius:0 var(--r) var(--r) 0;padding:clamp(1.2rem,4vw,1.7rem)}
+.mid-cta p{color:var(--text);font-size:1.02rem;line-height:1.65;max-width:34rem}
+.mid-cta p span{color:var(--body)}
+.mid-cta .lnk{font-weight:600;color:var(--cta);text-decoration:none;font-size:.95rem;display:inline-flex;gap:.4rem;align-items:center}
+.mid-cta .lnk:hover{text-decoration:underline}
+.ic{width:18px;height:18px;flex:none;fill:none;stroke:currentColor;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+.same .card-n{display:flex;align-items:center;gap:.5rem}
+.same .card-n .ic{color:#1F7A4D;width:16px;height:16px}
+.unk{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;background:var(--surface);border-radius:var(--r-lg);box-shadow:var(--shadow-card);overflow:hidden}
+.unk li{display:flex;gap:var(--s4);align-items:flex-start;padding:1rem clamp(1rem,3vw,1.4rem);border-top:1px solid var(--line-soft);color:var(--body);font-size:.98rem;line-height:1.6}
+.unk li:first-child{border-top:0}
+.unk li::before{content:"?";flex:none;width:26px;height:26px;border-radius:50%;background:var(--raise);color:var(--gold-ink);font-family:var(--f-mono);font-size:.8rem;font-weight:500;display:grid;place-items:center}
+.close-cta.v2{margin-top:0;background:var(--deep);color:var(--deep-fg);grid-template-columns:minmax(0,1fr) 15rem;align-items:start;gap:clamp(1.8rem,5vw,3rem)}
+.close-cta.v2 .eyebrow{color:var(--deep-dim)}
+.close-cta.v2 h2{color:#fff;max-width:30rem}
+.close-cta.v2 .intro{color:var(--deep-dim);font-size:1.02rem;line-height:1.7;max-width:32rem}
+.perks{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:var(--s3)}
+.perks li{display:flex;gap:var(--s3);align-items:flex-start;color:var(--deep-fg);font-size:1rem;line-height:1.55}
+.perks li b{font-weight:600}
+.perks li span{color:var(--deep-dim)}
+.perks .ic{margin-top:3px;width:20px;height:20px;padding:3px;border-radius:50%;background:var(--cta);color:#fff;stroke-width:3}
+.close-cta.v2 .cta-note{color:var(--deep-dim)}
+.close-cta.v2 .act{display:flex;flex-direction:column;gap:var(--s2);align-items:flex-start}
+.who{display:flex;flex-direction:column;gap:var(--s3)}
+.close-cta.v2 .photo{width:100%;max-width:15rem;box-shadow:none;border:1px solid var(--deep-line)}
+.who q{quotes:none;font-size:.92rem;line-height:1.6;color:var(--deep-fg)}
+.who small{color:var(--deep-dim);font-size:.8rem}
+@media (max-width:1039px){.hero-wrap .stats{display:none}}
+.who-t{display:flex;flex-direction:column;gap:.5rem}
+.perks li b{color:#fff}
+.who q{line-height:1.55}
+@media (max-width:760px){.close-cta.v2{grid-template-columns:1fr}.who{flex-direction:row;align-items:center}.close-cta.v2 .photo{width:96px;order:0}.who-t{display:flex;flex-direction:column;gap:.3rem}}
+
 </style>
 
 </head>
@@ -234,7 +287,9 @@ footer{padding-block:clamp(2.5rem,7vw,4rem) clamp(3.5rem,10vw,5.5rem);display:fl
 </header>
 
 <div class="shell" id="top">
+<div class="hero-wrap">
 <div class="hero">
+  <span class="upd"><i></i>Atualizado a 28/10/2026</span>
   <p class="eyebrow">Novidade em teste · Taxas da Airbnb</p>
   <h1>Link de reserva direta:<br>taxa de 6%, mas com letra pequena</h1>
   <p class="lede">A Airbnb está a testar um link que baixa a taxa de serviço quando é o próprio anfitrião a trazer o hóspede. <strong>A poupança é real, mas a reserva continua a ser da Airbnb.</strong> Eis o que se sabe, as contas e o que continua igual.</p>
@@ -245,6 +300,14 @@ footer{padding-block:clamp(2.5rem,7vw,4rem) clamp(3.5rem,10vw,5.5rem);display:fl
     <span class="stat"><b>6–10%</b><span>Com o link,<br>segundo o reportado</span></span>
     <span class="stat"><b>Piloto</b><span>Só para anfitriões<br>convidados</span></span>
   </div>
+</div>
+<aside class="fee" aria-label="Exemplo numa reserva de 1.000 euros">
+  <p class="fee-h">Numa reserva de 1.000 €</p>
+  <div class="fee-row"><b>Reserva normal</b><span class="v">845 €</span><small>taxa 15,5%</small></div>
+  <div class="fee-row"><b>Pelo link</b><span class="v">900 €</span><small>taxa 10%</small><span class="g">+55 €</span></div>
+  <div class="fee-row hi"><b>Pelo link</b><span class="v">940 €</span><small>taxa 6%</small><span class="g">+95 €</span></div>
+  <p class="fee-foot">Piloto por convite. Valores reportados pelos anfitriões convidados.</p>
+</aside>
 </div>
 
 <div class="layout">
@@ -291,6 +354,11 @@ footer{padding-block:clamp(2.5rem,7vw,4rem) clamp(3.5rem,10vw,5.5rem);display:fl
   </div>
 </section>
 
+<aside class="mid-cta">
+  <p>A Airbnb muda taxas, regras e funcionalidades com frequência, e nem sempre avisa com tempo. <span>Na Anfitriões Sérios, os membros ficam a par logo que a informação é pública, com o que fazer em cada caso.</span></p>
+  <a class="lnk" data-join href="#join" target="_blank" rel="noopener">Conhecer a comunidade <span aria-hidden="true">→</span></a>
+</aside>
+
 <section id="s4" data-t="Poupar ou dar desconto">
   <div class="sec-h"><span class="sec-n">04</span><h2>Poupar ou<br>passar ao hóspede</h2></div>
   <div class="prose">
@@ -317,18 +385,18 @@ footer{padding-block:clamp(2.5rem,7vw,4rem) clamp(3.5rem,10vw,5.5rem);display:fl
 
 <section id="s6" data-t="O que continua igual">
   <div class="sec-h"><span class="sec-n">06</span><h2>O que<br>continua igual</h2></div>
-  <div class="grid grid-2">
-    <div class="card"><span class="card-n">Pagamento</span><p>Quem cobra e paga ao anfitrião continua a ser a Airbnb, nos prazos de sempre.</p></div>
-    <div class="card"><span class="card-n">Proteção</span><p>Segundo o email do piloto, estas reservas mantêm a AirCover para anfitriões e o apoio da plataforma.</p></div>
-    <div class="card"><span class="card-n">Regras</span><p>Política de cancelamento, regras da casa e termos da Airbnb aplicam-se como em qualquer reserva.</p></div>
-    <div class="card"><span class="card-n">O hóspede</span><p>O contacto e os dados do hóspede continuam na Airbnb. O link não cria uma lista de clientes própria.</p></div>
+  <div class="grid grid-2 same">
+    <div class="card"><span class="card-n"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.2 4.2L19 7"/></svg>Pagamento</span><p>Quem cobra e paga ao anfitrião continua a ser a Airbnb, nos prazos de sempre.</p></div>
+    <div class="card"><span class="card-n"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.2 4.2L19 7"/></svg>Proteção</span><p>Segundo o email do piloto, estas reservas mantêm a AirCover para anfitriões e o apoio da plataforma.</p></div>
+    <div class="card"><span class="card-n"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.2 4.2L19 7"/></svg>Regras</span><p>Política de cancelamento, regras da casa e termos da Airbnb aplicam-se como em qualquer reserva.</p></div>
+    <div class="card"><span class="card-n"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.2 4.2L19 7"/></svg>O hóspede</span><p>O contacto e os dados do hóspede continuam na Airbnb. O link não cria uma lista de clientes própria.</p></div>
   </div>
   <p class="prose">Por isso o link é uma boa notícia para quem já tem como atrair hóspedes, mas não substitui ter canais próprios. Depender de uma só plataforma continua a ser um risco.</p>
 </section>
 
 <section id="s7" data-t="O que ainda não se sabe">
   <div class="sec-h"><span class="sec-n">07</span><h2>O que ainda<br>não se sabe</h2></div>
-  <ul class="qs">
+  <ul class="unk">
     <li>Em que países está disponível. Não há confirmação para Portugal nem para o Brasil.</li>
     <li>Se a taxa de 6% ou 10% é para manter ou só durante o teste.</li>
     <li>Como se decide quem fica em cada nível.</li>
@@ -343,17 +411,26 @@ footer{padding-block:clamp(2.5rem,7vw,4rem) clamp(3.5rem,10vw,5.5rem);display:fl
   <div class="acc" id="acc"></div>
 </section>
 
-<div class="close-cta" id="join">
+<div class="close-cta v2" id="join">
   <div class="txt">
-    <p class="eyebrow">Próximo passo</p>
-    <h2>Saber das mudanças antes de elas chegarem ao anúncio</h2>
-    <div class="prose">
-      <p>A Anfitriões Sérios é uma comunidade privada e exclusiva para anfitriões Airbnb em Portugal e no Brasil. Quando a plataforma muda taxas, regras ou funcionalidades, os membros ficam a par logo que a informação é pública, explicada em português e com o que fazer em cada caso.</p>
-      <p>Cursos práticos, ajuda nas situações difíceis com hóspedes e anfitriões com a mesma mentalidade: soluções em vez de queixas.</p>
+    <p class="eyebrow">Anfitriões Sérios</p>
+    <h2>Na próxima mudança, já se sabe o que fazer</h2>
+    <p class="intro">Uma comunidade privada e exclusiva para anfitriões Airbnb em Portugal e no Brasil. Sem drama e sem truques: informação clara e ajuda prática.</p>
+    <ul class="perks">
+      <li><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.2 4.2L19 7"/></svg><span><b>A par das mudanças da plataforma</b>, logo que a informação é pública, explicadas em português.</span></li>
+      <li><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.2 4.2L19 7"/></svg><span><b>O que fazer em cada caso</b>, e não apenas a notícia.</span></li>
+      <li><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.2 4.2L19 7"/></svg><span><b>Ajuda nas situações difíceis</b> com hóspedes, danos e avaliações.</span></li>
+      <li><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.2 4.2L19 7"/></svg><span><b>Cursos práticos</b> e anfitriões com a mesma mentalidade: soluções em vez de queixas.</span></li>
+    </ul>
+    <div class="act">
+      <a class="btn btn-cta btn-cta--lg" data-join href="#join" target="_blank" rel="noopener">Entrar na Anfitriões Sérios</a>
+      <span class="cta-note">Comunidade independente, sem ligação à Airbnb</span>
     </div>
-    <a class="btn btn-cta btn-cta--lg" data-join href="#join" target="_blank" rel="noopener">Entrar na Anfitriões Sérios</a>
   </div>
-  <img class="photo" src="/images/avatar.webp" alt="Bruno, fundador da Anfitriões Sérios" width="220" height="220" loading="lazy">
+  <div class="who">
+    <img class="photo" src="/images/avatar.webp" alt="Bruno, fundador da Anfitriões Sérios" width="240" height="240" loading="lazy">
+    <div class="who-t"><q>Acompanho de perto os termos e as atualizações públicas da plataforma, para que os membros não tenham de o fazer sozinhos.</q><small>Bruno · fundador, mais de 3 anos a ajudar anfitriões</small></div>
+  </div>
 </div>
 
 <footer>
