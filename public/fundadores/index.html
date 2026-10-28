@@ -1,0 +1,420 @@
+<!doctype html>
+<html lang="pt">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fundadores · Anfitriões Sérios</title>
+<meta name="description" content="Comunidade privada só para anfitriões. Ajuda focada em cada caso: hangouts ao vivo, mensagens privadas com o Bruno e workshops. 25 lugares de Fundador por US$5/mês.">
+<meta property="og:title" content="Anfitriões Sérios · 25 lugares de Fundador">
+<meta property="og:description" content="Avaliações injustas acontecem. Saber o que fazer não devia depender da sorte.">
+<meta property="og:type" content="website">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<!-- Meta Pixel: substituir SEU_PIXEL_ID pelo ID do pixel e retirar os comentários
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init','SEU_PIXEL_ID');fbq('track','PageView');
+document.addEventListener('click',function(e){if(e.target.closest('[data-cta]'))fbq('track','Lead');});
+</script>
+-->
+
+<style>
+:root{
+  --bg:#F6F8FC; --card:#FFFFFF; --navy:#0F1F3D; --muted:#4A566E; --line:#DDE3EE;
+  --orange:#C7501E; --orange-dark:#A9441A; --gold:#C9963A; --soft:#EEF2F9;
+  --r:16px; --max:1080px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--navy);font-family:"Plus Jakarta Sans",system-ui,-apple-system,sans-serif;font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 20px}
+section{padding:72px 0}
+h1,h2,h3{line-height:1.2;letter-spacing:-.02em}
+h1{font-size:clamp(2rem,5.4vw,3.4rem);font-weight:800}
+h2{font-size:clamp(1.6rem,3.6vw,2.3rem);font-weight:800;margin-bottom:16px}
+h3{font-size:1.15rem;font-weight:700;margin-bottom:6px}
+.hl{color:var(--orange)}
+.muted{color:var(--muted)}
+.lead{font-size:1.12rem;color:var(--muted);max-width:640px}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:.8rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--navy);background:var(--card);border:1px solid var(--line);padding:7px 14px;border-radius:999px}
+.eyebrow i{width:8px;height:8px;border-radius:50%;background:var(--gold);display:block}
+
+/* header */
+header{padding:18px 0;border-bottom:1px solid var(--line);background:var(--bg)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:800;text-decoration:none;font-size:1.02rem}
+.brand svg{flex:none}
+.hdr-cta{font-size:.9rem;font-weight:700;text-decoration:none;color:var(--orange);white-space:nowrap}
+
+/* buttons */
+.btn{display:inline-block;background:var(--orange);color:#fff;text-decoration:none;font-weight:700;font-size:1.05rem;padding:16px 30px;border-radius:12px;box-shadow:0 6px 18px rgba(199,80,30,.25);transition:background .15s,transform .15s}
+.btn:hover{background:var(--orange-dark);transform:translateY(-1px)}
+.btn:focus-visible{outline:3px solid var(--navy);outline-offset:3px}
+.fine{font-size:.88rem;color:var(--muted);margin-top:14px;max-width:520px}
+.fine b{color:var(--navy)}
+
+/* hero */
+.hero{padding:56px 0 72px}
+.hero .grid{display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center}
+.hero h1{margin:20px 0 18px}
+.hero .lead{margin-bottom:28px}
+.mock{position:relative}
+.rv{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:20px;box-shadow:0 12px 32px rgba(15,31,61,.08)}
+.rv + .rv{margin-top:14px}
+.rv-top{display:flex;align-items:center;gap:10px;margin-bottom:10px}
+.av{width:36px;height:36px;border-radius:50%;background:var(--soft);display:grid;place-items:center;font-weight:700;color:var(--muted);font-size:.85rem}
+.stars{color:var(--gold);letter-spacing:2px;font-size:.95rem}
+.stars s{color:var(--line);text-decoration:none}
+.rv p{font-size:.95rem;color:var(--muted)}
+.rv.reply{margin-left:28px;border-left:4px solid var(--navy)}
+.tag{display:inline-block;font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--navy);background:var(--soft);padding:4px 9px;border-radius:6px;margin-bottom:8px}
+
+/* images */
+.hero-photo{border-radius:24px;overflow:hidden;box-shadow:0 18px 40px rgba(15,31,61,.14);aspect-ratio:4/5;background:var(--soft)}
+.hero-photo img,.banner img,.cimg img{width:100%;height:100%;object-fit:cover;display:block}
+.mock .cards-over{position:absolute;left:-36px;right:24px;bottom:-28px}
+.mock .rv{padding:14px 16px}
+.mock .rv p{font-size:.88rem}
+.banner{margin-top:28px;border-radius:20px;overflow:hidden;aspect-ratio:21/8;background:var(--soft)}
+.cgrid{display:grid;grid-template-columns:.9fr 1.1fr;gap:36px;align-items:center}
+.cimg{border-radius:20px;overflow:hidden;aspect-ratio:4/3.4;background:var(--soft)}
+/* problem */
+.problem{background:var(--card);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.plist{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin:32px 0}
+.plist div{background:var(--bg);border:1px solid var(--line);border-radius:var(--r);padding:22px}
+.plist span{display:block;font-weight:800;color:var(--orange);font-size:.85rem;margin-bottom:8px}
+.quote{font-size:1.25rem;font-weight:700;max-width:760px;border-left:4px solid var(--orange);padding-left:18px}
+
+/* help */
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:32px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:26px}
+.card .ic{width:46px;height:46px;border-radius:12px;background:var(--navy);display:grid;place-items:center;margin-bottom:16px}
+.card p{color:var(--muted);font-size:.97rem}
+.note{margin-top:24px;font-weight:700}
+
+/* compare */
+.cmp{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:28px}
+.col{border-radius:var(--r);padding:26px;border:1px solid var(--line)}
+.col.bad{background:var(--card)}
+.col.good{background:var(--navy);color:#fff;border-color:var(--navy)}
+.col h3{margin-bottom:14px}
+.col ul{list-style:none;display:grid;gap:12px}
+.col li{display:flex;gap:10px;align-items:flex-start;font-size:.98rem}
+.col.bad li{color:var(--muted)}
+.col li svg{flex:none;margin-top:4px}
+
+/* courses */
+.courses{background:var(--card);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.clist{display:grid;grid-template-columns:1fr;gap:12px;margin:26px 0 18px;list-style:none}
+.clist li{display:flex;gap:12px;align-items:center;background:var(--bg);border:1px solid var(--line);border-radius:12px;padding:14px 16px;font-weight:600}
+.clist li b{width:28px;height:28px;flex:none;border-radius:8px;background:var(--navy);color:#fff;display:grid;place-items:center;font-size:.8rem}
+
+/* founder */
+.founder .grid{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:start}
+.blist{list-style:none;display:grid;gap:18px;margin-top:24px}
+.blist li{display:flex;gap:14px}
+.blist li .dot{flex:none;width:26px;height:26px;border-radius:50%;background:var(--orange);display:grid;place-items:center;margin-top:2px}
+.blist li p{color:var(--muted);font-size:.97rem}
+.price{background:var(--card);border:2px solid var(--navy);border-radius:20px;padding:30px;position:sticky;top:20px}
+.price .badge{display:inline-flex;align-items:center;gap:8px;background:var(--navy);color:#fff;font-size:.78rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:6px 12px;border-radius:999px}
+.price .badge i{width:8px;height:8px;border-radius:50%;background:var(--gold)}
+.amount{font-size:3.2rem;font-weight:800;margin:16px 0 0;line-height:1}
+.amount small{font-size:1rem;font-weight:600;color:var(--muted)}
+.price .keep{color:var(--muted);font-size:.95rem;margin:8px 0 18px}
+.later{display:flex;justify-content:space-between;gap:10px;border-top:1px dashed var(--line);padding:14px 0;font-size:.93rem;color:var(--muted)}
+.later b{color:var(--navy);text-decoration:line-through;text-decoration-color:var(--orange)}
+.price .btn{width:100%;text-align:center;margin-top:6px}
+.how{margin-top:16px;font-size:.88rem;color:var(--muted);background:var(--bg);border-radius:12px;padding:14px}
+
+/* about */
+.about{background:var(--card);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.about .grid{display:grid;grid-template-columns:auto 1fr;gap:36px;align-items:center}
+.photo{width:180px;height:180px;border-radius:24px;background:var(--navy);display:grid;place-items:center;color:var(--gold);font-weight:800;font-size:3rem;overflow:hidden}
+.photo img{width:100%;height:100%;object-fit:cover}
+.about p{color:var(--muted);margin-top:10px;max-width:680px}
+.stats{display:flex;flex-wrap:wrap;gap:12px;margin-top:20px}
+.stats span{background:var(--bg);border:1px solid var(--line);border-radius:999px;padding:8px 14px;font-weight:700;font-size:.88rem}
+
+/* fit */
+.fit{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:28px}
+.fit > div{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:26px}
+.fit ul{list-style:none;display:grid;gap:10px;margin-top:10px}
+.fit li{display:flex;gap:10px;color:var(--muted)}
+.fit li svg{flex:none;margin-top:5px}
+
+/* faq */
+.faq{max-width:780px}
+details{background:var(--card);border:1px solid var(--line);border-radius:12px;margin-top:12px}
+summary{cursor:pointer;list-style:none;padding:18px 52px 18px 20px;font-weight:700;position:relative}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";position:absolute;right:20px;top:50%;transform:translateY(-50%);font-size:1.4rem;color:var(--orange);font-weight:600}
+details[open] summary::after{content:"–"}
+details p{padding:0 20px 18px;color:var(--muted)}
+
+/* final */
+.final{background:var(--navy);color:#fff;text-align:center}
+.final h2{color:#fff}
+.final p{color:#C9D2E3;max-width:560px;margin:0 auto 28px}
+.final .fine{color:#AEB9CF;margin:16px auto 0}
+footer{padding:28px 0;text-align:center;font-size:.85rem;color:var(--muted)}
+
+/* mobile sticky cta */
+.sticky{display:none}
+
+@media (max-width:860px){
+  section{padding:56px 0}
+  .hero{padding:36px 0 56px}
+  .hero .grid,.founder .grid{grid-template-columns:1fr;gap:36px}
+  .plist,.cards{grid-template-columns:1fr}
+  .cmp,.fit{grid-template-columns:1fr}
+  .clist{grid-template-columns:1fr}
+  .about .grid{grid-template-columns:1fr;gap:20px}
+  .cgrid{grid-template-columns:1fr;gap:24px}
+  .banner{aspect-ratio:16/10}
+  .mock{padding-bottom:40px}
+  .mock .cards-over{left:12px;right:12px;bottom:0}
+  .mock .rv.reply{display:none}
+  .photo{width:120px;height:120px;font-size:2.2rem}
+  .price{position:static}
+  .btn{width:100%;text-align:center}
+  .hdr-cta{display:none}
+  .sticky{display:block;position:fixed;left:0;right:0;bottom:0;padding:12px 16px calc(12px + env(safe-area-inset-bottom));background:rgba(246,248,252,.96);border-top:1px solid var(--line);backdrop-filter:blur(6px);z-index:10}
+  .sticky .btn{padding:14px}
+  body{padding-bottom:82px}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a class="brand" href="#topo" aria-label="Anfitriões Sérios">
+      <svg width="34" height="34" viewBox="0 0 34 34" aria-hidden="true"><rect width="34" height="34" rx="8" fill="#0F1F3D"/><path d="M8 16.5 17 9l9 7.5V26a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1z" fill="none" stroke="#C9963A" stroke-width="2" stroke-linejoin="round"/><circle cx="17" cy="18.5" r="2.2" fill="#C9963A"/><path d="M16.2 20h1.6l.6 3.6h-2.8z" fill="#C9963A"/></svg>
+      Anfitriões Sérios
+    </a>
+    <a class="hdr-cta" href="https://www.skool.com/host-insider-pro-5934/about" data-cta>Entrar como Fundador →</a>
+  </div>
+</header>
+
+<main id="topo">
+
+<!-- 1. HERO -->
+<section class="hero">
+  <div class="wrap grid">
+    <div>
+      <span class="eyebrow"><i></i>Pré-lançamento · 25 lugares de Fundador</span>
+      <h1>Avaliações injustas acontecem. <span class="hl">Saber o que fazer</span> não devia depender da sorte.</h1>
+      <p class="lead">A Anfitriões Sérios é uma comunidade privada só para anfitriões, com ajuda focada em cada caso: hangouts ao vivo, mensagens privadas com o Bruno e workshops escolhidos conforme as necessidades dos membros.</p>
+      <a class="btn" href="https://www.skool.com/host-insider-pro-5934/about" data-cta>Entrar como Fundador</a>
+      <p class="fine"><b>7 dias grátis, sem cobrança.</b> Depois, US$5/mês para sempre enquanto a adesão se mantiver ativa. Cancelamento possível a qualquer momento antes da primeira cobrança.</p>
+    </div>
+    <div class="mock">
+      <div class="hero-photo"><img src="img/hero.jpg" alt="Anfitrião a ler uma avaliação no telemóvel, com calma, à mesa da cozinha" width="900" height="1125" fetchpriority="high"></div>
+      <div class="cards-over" aria-hidden="true">
+      <div class="rv">
+        <div class="rv-top"><div class="av">H</div><div><b style="font-size:.92rem">Hóspede</b><div class="stars">★★<s>★★★</s></div></div></div>
+        <p>"Nada correspondia ao anúncio. Não recomendo."</p>
+      </div>
+      <div class="rv reply">
+        <span class="tag">Resposta preparada com calma</span>
+        <p>Factos organizados, tom profissional e uma resposta pensada para os próximos hóspedes que a vão ler.</p>
+      </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 2. PROBLEMA -->
+<section class="problem">
+  <div class="wrap">
+    <h2>Quando a avaliação chega, <span class="hl">a pressão também chega</span></h2>
+    <div class="plist">
+      <div><span>01</span>Tudo feito como deve ser e, mesmo assim, uma avaliação que não corresponde ao que aconteceu.</div>
+      <div><span>02</span>A vontade de responder logo, a quente. E a resposta fica pública para todos os próximos hóspedes.</div>
+      <div><span>03</span>A sensação de que algo podia ter sido evitado antes do check-out, sem saber exatamente o quê.</div>
+    </div>
+    <p class="quote">Muitos anfitriões perdem casos não por falta de razão, mas por falta de serenidade e organização. É isso que se trabalha aqui.</p>
+  </div>
+</section>
+
+<!-- 3. AJUDA FOCADA -->
+<section>
+  <div class="wrap">
+    <h2>Ajuda focada no caso de <span class="hl">cada anfitrião</span></h2>
+    <p class="lead">Mais do que conteúdo: acompanhamento contínuo, com quem conhece os problemas de perto.</p>
+    <div class="banner"><img src="img/hangout.jpg" alt="Hangout online entre anfitriões, visto num portátil" width="1200" height="806" loading="lazy"></div>
+    <div class="cards">
+      <div class="card">
+        <div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#C9963A" stroke-width="2" stroke-linecap="round"><rect x="3" y="5" width="13" height="14" rx="2"/><path d="m16 10 5-3v10l-5-3"/></svg></div>
+        <h3>Hangouts ao vivo, todos os domingos</h3>
+        <p>Uma hora com o Bruno às 19h de Brasília (22h de Lisboa). Perguntas, casos reais, análise de anúncios em direto e atualizações da plataforma. As gravações ficam disponíveis.</p>
+      </div>
+      <div class="card">
+        <div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#C9963A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1.1-4.6A8 8 0 1 1 21 12z"/></svg></div>
+        <h3>Ajuda personalizada por mensagem privada</h3>
+        <p>Um caso concreto, uma avaliação por responder, uma dúvida antes de agir. A conversa é direta com o Bruno, com calma e organização.</p>
+      </div>
+      <div class="card">
+        <div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#C9963A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19V5a2 2 0 0 1 2-2h12v18H6a2 2 0 0 1-2-2z"/><path d="M8 7h6M8 11h6"/></svg></div>
+        <h3>Workshops conforme as necessidades</h3>
+        <p>Os temas são escolhidos a partir do que os membros precisam. O primeiro em preparação: as novas regras da casa da Airbnb.</p>
+      </div>
+    </div>
+    <p class="note">Sem conselhos genéricos. Cada caso é olhado pelo que é.</p>
+  </div>
+</section>
+
+<!-- 4. GRUPOS GRATUITOS -->
+<section style="padding-top:0">
+  <div class="wrap">
+    <h2>Longe dos dramas dos <span class="hl">grupos gratuitos</span></h2>
+    <div class="cmp">
+      <div class="col bad">
+        <h3>Grupos gratuitos</h3>
+        <ul>
+          <li><svg width="14" height="14" viewBox="0 0 14 14"><path d="M3 3l8 8M11 3l-8 8" stroke="#9AA4B8" stroke-width="2" stroke-linecap="round"/></svg>Dezenas de opiniões contraditórias</li>
+          <li><svg width="14" height="14" viewBox="0 0 14 14"><path d="M3 3l8 8M11 3l-8 8" stroke="#9AA4B8" stroke-width="2" stroke-linecap="round"/></svg>Desabafos sem saída</li>
+          <li><svg width="14" height="14" viewBox="0 0 14 14"><path d="M3 3l8 8M11 3l-8 8" stroke="#9AA4B8" stroke-width="2" stroke-linecap="round"/></svg>Anfitriões, hóspedes e curiosos misturados</li>
+          <li><svg width="14" height="14" viewBox="0 0 14 14"><path d="M3 3l8 8M11 3l-8 8" stroke="#9AA4B8" stroke-width="2" stroke-linecap="round"/></svg>Conselhos que se perdem no feed</li>
+          <li><svg width="14" height="14" viewBox="0 0 14 14"><path d="M3 3l8 8M11 3l-8 8" stroke="#9AA4B8" stroke-width="2" stroke-linecap="round"/></svg>Discussões que amplificam o drama</li>
+        </ul>
+      </div>
+      <div class="col good">
+        <h3>Anfitriões Sérios</h3>
+        <ul>
+          <li><svg width="16" height="16" viewBox="0 0 16 16"><path d="m3 8.5 3 3 7-7" fill="none" stroke="#C9963A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>Respostas focadas em cada caso</li>
+          <li><svg width="16" height="16" viewBox="0 0 16 16"><path d="m3 8.5 3 3 7-7" fill="none" stroke="#C9963A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>Problema → solução</li>
+          <li><svg width="16" height="16" viewBox="0 0 16 16"><path d="m3 8.5 3 3 7-7" fill="none" stroke="#C9963A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>Só anfitriões</li>
+          <li><svg width="16" height="16" viewBox="0 0 16 16"><path d="m3 8.5 3 3 7-7" fill="none" stroke="#C9963A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>Cursos, guias e casos organizados</li>
+          <li><svg width="16" height="16" viewBox="0 0 16 16"><path d="m3 8.5 3 3 7-7" fill="none" stroke="#C9963A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>Crítica construtiva e respeito</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 5. CURSOS -->
+<section class="courses">
+  <div class="wrap cgrid">
+    <div class="cimg"><img src="img/boasvindas.jpg" alt="Anfitrião a preparar as chaves e um cartão de boas-vindas numa entrada arrumada" width="1200" height="806" loading="lazy"></div>
+    <div>
+    <h2>Cursos e guias <span class="hl">práticos</span></h2>
+    <p class="lead">Escritos, diretos e fáceis de consultar sempre que for preciso.</p>
+    <ul class="clist">
+      <li><b>01</b>Comece Aqui</li>
+      <li><b>02</b>Checklist do Novo Anfitrião</li>
+      <li><b>03</b>Avaliações no Airbnb</li>
+      <li><b>04</b>Roteiro para Avaliações de 5 Estrelas</li>
+      <li><b>05</b>Visibilidade no Airbnb</li>
+      <li><b>06</b>Biblioteca de Casos Reais</li>
+      <li><b>07</b>Gravações dos hangouts e workshops</li>
+    </ul>
+    <p class="muted">Novos cursos são acrescentados conforme as necessidades e o feedback dos membros.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 6. FUNDADOR -->
+<section class="founder" id="fundador">
+  <div class="wrap grid">
+    <div>
+      <h2>Só os <span class="hl">25 primeiros</span> membros entram como Fundadores</h2>
+      <ul class="blist">
+        <li><span class="dot"><svg width="12" height="12" viewBox="0 0 16 16"><path d="m3 8.5 3 3 7-7" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span><div><h3>Acesso completo</h3><p>Hangouts ao vivo, ajuda personalizada por mensagem privada, workshops, todos os cursos e as gravações.</p></div></li>
+        <li><span class="dot"><svg width="12" height="12" viewBox="0 0 16 16"><path d="m3 8.5 3 3 7-7" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span><div><h3>US$5/mês para sempre</h3><p>Quando o preço subir, os Fundadores continuam a pagar US$5/mês, desde que a adesão se mantenha paga e ativa.</p></div></li>
+        <li><span class="dot"><svg width="12" height="12" viewBox="0 0 16 16"><path d="m3 8.5 3 3 7-7" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span><div><h3>Ajudar a moldar a comunidade</h3><p>Os primeiros temas, workshops e cursos partem do feedback dos Fundadores.</p></div></li>
+        <li><span class="dot"><svg width="12" height="12" viewBox="0 0 16 16"><path d="m3 8.5 3 3 7-7" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span><div><h3>Entrar com o grupo ainda pequeno</h3><p>Mais tempo e atenção para cada caso.</p></div></li>
+      </ul>
+    </div>
+    <aside class="price">
+      <span class="badge"><i></i>Fundador · 25 lugares</span>
+      <p class="amount">US$5<small> /mês</small></p>
+      <p class="keep">Acesso completo, valor mantido enquanto a adesão estiver ativa.</p>
+      <div class="later"><span>Depois dos 25 lugares</span><span>a partir de <b>US$19/mês</b></span></div>
+      <a class="btn" href="https://www.skool.com/host-insider-pro-5934/about" data-cta>Entrar como Fundador</a>
+      <p class="how"><b style="color:var(--navy)">Como funciona:</b> 7 dias grátis, sem cobrança. O cancelamento pode ser feito a qualquer momento antes da primeira cobrança. O lugar de Fundador fica confirmado com o primeiro pagamento.</p>
+    </aside>
+  </div>
+</section>
+
+<!-- 7. QUEM ESTÁ POR TRÁS -->
+<section class="about">
+  <div class="wrap grid">
+    <div class="photo"><!-- substituir por <img src="bruno.jpg" alt="Bruno"> -->B</div>
+    <div>
+      <h2>Quem está por trás</h2>
+      <p>O Bruno ajuda anfitriões há mais de 3 anos a lidar com problemas e a preparar-se para os evitar, e a otimizar os anúncios para potenciar mais reservas. Já acompanhou individualmente dezenas de anfitriões e estuda de forma constante os termos e as atualizações da plataforma.</p>
+      <p>Na comunidade, o Bruno não é guru: é mais um anfitrião, com experiência para partilhar e total transparência sobre como a plataforma funciona.</p>
+      <div class="stats"><span>+3 anos a ajudar anfitriões</span><span>Dezenas de casos acompanhados</span><span>Termos acompanhados de forma contínua</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- 8. PARA QUEM É -->
+<section>
+  <div class="wrap">
+    <h2>Para quem é</h2>
+    <div class="fit">
+      <div>
+        <h3>É para quem:</h3>
+        <ul>
+          <li><svg width="16" height="16" viewBox="0 0 16 16"><path d="m3 8.5 3 3 7-7" fill="none" stroke="#C7501E" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>tem um ou mais anúncios e quer prevenir problemas em vez de apagar fogos;</li>
+          <li><svg width="16" height="16" viewBox="0 0 16 16"><path d="m3 8.5 3 3 7-7" fill="none" stroke="#C7501E" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>prefere agir com calma e organização;</li>
+          <li><svg width="16" height="16" viewBox="0 0 16 16"><path d="m3 8.5 3 3 7-7" fill="none" stroke="#C7501E" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>valoriza respostas concretas e conversas com substância.</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Não é para quem:</h3>
+        <ul>
+          <li><svg width="14" height="14" viewBox="0 0 14 14"><path d="M3 3l8 8M11 3l-8 8" stroke="#9AA4B8" stroke-width="2" stroke-linecap="round"/></svg>procura truques, lacunas ou formas de contornar o sistema;</li>
+          <li><svg width="14" height="14" viewBox="0 0 14 14"><path d="M3 3l8 8M11 3l-8 8" stroke="#9AA4B8" stroke-width="2" stroke-linecap="round"/></svg>procura aconselhamento legal ou fiscal;</li>
+          <li><svg width="14" height="14" viewBox="0 0 14 14"><path d="M3 3l8 8M11 3l-8 8" stroke="#9AA4B8" stroke-width="2" stroke-linecap="round"/></svg>não é anfitrião.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 9. FAQ -->
+<section style="padding-top:0">
+  <div class="wrap faq">
+    <h2>Perguntas frequentes</h2>
+    <details><summary>Como funcionam os 7 dias grátis?</summary><p>A entrada começa com 7 dias grátis, sem qualquer cobrança. Quem não quiser continuar pode cancelar a qualquer momento antes da primeira cobrança. O Skool envia um aviso por email antes de o período grátis terminar.</p></details>
+    <details><summary>É possível cancelar depois?</summary><p>Sim, a qualquer momento, nas definições da conta no Skool.</p></details>
+    <details><summary>Como se contam os 25 lugares de Fundador?</summary><p>O lugar fica confirmado com o primeiro pagamento, depois dos 7 dias grátis. Quando houver 25 Fundadores, o plano fecha e o preço sobe.</p></details>
+    <details><summary>O preço de Fundador muda quando o preço subir?</summary><p>Não. Os Fundadores pagam sempre US$5/mês, desde que a adesão se mantenha paga e ativa. Em caso de cancelamento, uma nova adesão segue o preço em vigor nessa altura.</p></details>
+    <details><summary>A comunidade ajuda a remover avaliações?</summary><p>Não se prometem remoções. Ajuda-se a perceber as opções, a preparar cada caso e a responder com calma e profissionalismo.</p></details>
+    <details><summary>Há alguma ligação à Airbnb?</summary><p>Não. A Anfitriões Sérios é uma comunidade independente.</p></details>
+    <details><summary>Serve para Portugal e para o Brasil?</summary><p>Sim. O conteúdo é em português neutro. Questões legais e fiscais de cada país ficam fora do âmbito da comunidade.</p></details>
+    <details><summary>Porque é que o preço está em dólares?</summary><p>O Skool cobra em dólares. A conversão é feita automaticamente pelo banco ou pelo cartão.</p></details>
+  </div>
+</section>
+
+<!-- 10. FECHO -->
+<section class="final">
+  <div class="wrap">
+    <h2>Menos drama. Mais preparação.</h2>
+    <p>Só 25 lugares de Fundador: acesso completo por US$5/mês, para sempre enquanto a adesão estiver ativa. Começa com 7 dias grátis.</p>
+    <a class="btn" href="https://www.skool.com/host-insider-pro-5934/about" data-cta>Entrar como Fundador</a>
+    <p class="fine">Sem cobrança nos primeiros 7 dias. Cancelamento possível a qualquer momento antes da primeira cobrança.</p>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">© 2026 Anfitriões Sérios · Comunidade independente, sem ligação à Airbnb.</div>
+</footer>
+
+<div class="sticky"><a class="btn" href="https://www.skool.com/host-insider-pro-5934/about" data-cta>Entrar como Fundador · 7 dias grátis</a></div>
+
+</body>
+</html>

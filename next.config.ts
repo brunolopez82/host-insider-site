@@ -12,7 +12,11 @@ const nextConfig: NextConfig = {
   // direct message. Each is a static public/g/<code>/index.html, served at the
   // short folder URL. Keep them and their PDFs out of search engines.
   async rewrites() {
-    return [{ source: "/g/:code/", destination: "/g/:code/index.html" }];
+    return [
+      { source: "/g/:code/", destination: "/g/:code/index.html" },
+      // Founders pre-launch page for the Meta campaign (static file in public/).
+      { source: "/fundadores/", destination: "/fundadores/index.html" },
+    ];
   },
   async redirects() {
     return [
