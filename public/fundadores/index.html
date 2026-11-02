@@ -198,6 +198,15 @@ footer{padding:28px 0;text-align:center;font-size:.85rem;color:var(--muted)}
   .sticky .btn{padding:14px}
   body{padding-bottom:82px}
 }
+
+/* Distintivo de autoridade (Ex-colaborador do Airbnb) */
+.as-badge-wrap{position:relative;display:inline-block;justify-self:center;align-self:center;line-height:0}
+.as-badge{position:absolute;left:-12px;bottom:-14px;display:flex;flex-direction:column;gap:2px;width:max-content;max-width:190px;padding:9px 14px 9px 12px;background:#fff;color:#0F1F3D;border:1px solid #DDE3EE;border-radius:14px;box-shadow:0 6px 18px -8px rgba(15,31,61,.28);font-family:inherit;line-height:1.25;text-align:left}
+.as-badge__icon{position:absolute;top:-11px;right:10px;width:22px;height:22px;padding:2px;background:#fff;border-radius:7px}
+.as-badge__title{font-size:11.5px;font-weight:800;letter-spacing:.04em;text-transform:uppercase;padding-right:18px}
+.as-badge__sub{font-size:12px;color:#4A566E}
+@media (max-width:760px){.close-cta .as-badge-wrap{order:-1}.as-badge{left:50%;transform:translateX(-50%);bottom:-18px}}
+@media (max-width:760px){.about .as-badge-wrap{justify-self:start;margin-bottom:18px}.about .as-badge{left:-6px;transform:none}}
 </style>
 </head>
 <body>
@@ -365,7 +374,7 @@ footer{padding:28px 0;text-align:center;font-size:.85rem;color:var(--muted)}
 <!-- 7. QUEM ESTÁ POR TRÁS -->
 <section class="about">
   <div class="wrap grid">
-    <div class="photo"><img src="img/bruno.jpg" alt="Bruno, anfitrião e criador da Anfitriões Sérios" width="600" height="600" loading="lazy"></div>
+    <div class="as-badge-wrap"><div class="photo"><img src="img/bruno.jpg" alt="Bruno, anfitrião e criador da Anfitriões Sérios" width="600" height="600" loading="lazy"></div><div class="as-badge" role="note"><img class="as-badge__icon" src="/images/icone-distintivo.svg" alt="" width="24" height="24"><span class="as-badge__title">Ex-colaborador do Airbnb</span><span class="as-badge__sub">Hoje, ao lado dos anfitriões</span></div></div>
     <div>
       <h2>Quem está por trás</h2>
       <p>O Bruno ajuda anfitriões há mais de 3 anos a lidar com problemas e a preparar-se para os evitar, e a otimizar os anúncios para potenciar mais reservas. Já acompanhou individualmente dezenas de anfitriões e estuda de forma constante os termos e as atualizações da plataforma.</p>

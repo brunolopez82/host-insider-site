@@ -65,6 +65,31 @@ function Cta({ children }: { children: React.ReactNode }) {
   );
 }
 
+/** Distintivo discreto de autoridade, sobreposto ao canto da fotografia. */
+function AuthorityBadge() {
+  return (
+    <div
+      role="note"
+      className="absolute left-1/2 -translate-x-1/2 md:left-[-14px] md:translate-x-0 -bottom-5 flex flex-col gap-0.5 w-max max-w-[190px] rounded-[14px] bg-white px-3.5 py-2 text-left shadow-[0_8px_22px_-8px_rgba(0,0,0,0.45)]"
+    >
+      <Image
+        src="/images/icone-distintivo.svg"
+        alt=""
+        width={22}
+        height={22}
+        unoptimized
+        className="absolute -top-[11px] right-2.5 rounded-[7px] bg-white p-0.5"
+      />
+      <span className="pr-5 text-[11.5px] font-extrabold uppercase tracking-[0.04em] leading-tight text-[#0F1F3D]">
+        Ex-colaborador do Airbnb
+      </span>
+      <span className="text-[12px] leading-snug text-[#4A566E]">
+        Hoje, ao lado dos anfitriões
+      </span>
+    </div>
+  );
+}
+
 export default function PaginaInicial() {
   return (
     <main className="tone-pt min-h-screen flex flex-col text-[color:var(--fg)]">
@@ -160,13 +185,16 @@ export default function PaginaInicial() {
       <section className="px-6 py-14 md:py-16 border-t border-white/[0.07]">
         <FadeIn>
           <div className="max-w-[880px] mx-auto flex flex-col md:flex-row items-center gap-8 md:gap-12">
-            <div className="relative w-[220px] h-[220px] md:w-[260px] md:h-[260px] shrink-0 rounded-3xl overflow-hidden border border-white/10">
-              <Image
-                src="/images/avatar.webp"
-                alt="Bruno, fundador da comunidade Anfitriões Sérios"
-                fill
-                style={{ objectFit: "cover", objectPosition: "center" }}
-              />
+            <div className="relative shrink-0 mb-6 md:mb-0">
+              <div className="relative w-[220px] h-[220px] md:w-[260px] md:h-[260px] rounded-3xl overflow-hidden border border-white/10">
+                <Image
+                  src="/images/avatar.webp"
+                  alt="Bruno, fundador da comunidade Anfitriões Sérios"
+                  fill
+                  style={{ objectFit: "cover", objectPosition: "center" }}
+                />
+              </div>
+              <AuthorityBadge />
             </div>
 
             <div className="text-center md:text-left">
