@@ -291,6 +291,13 @@ footer{padding-block:clamp(2.5rem,7vw,4rem) clamp(3.5rem,10vw,5.5rem);display:fl
 .why{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:var(--s2)}
 .why li{position:relative;padding-left:1.6rem;color:var(--body);font-size:.98rem;line-height:1.65}
 .why li::before{content:"";position:absolute;left:0;top:.62em;width:10px;height:10px;border-radius:3px;background:var(--cta)}
+.banner{display:flex;gap:var(--s4);align-items:flex-start;margin:0 0 clamp(2.2rem,6vw,3.5rem);padding:var(--s5) var(--s5);border-radius:var(--r-lg);background:var(--surface);border-left:6px solid var(--cta);box-shadow:var(--shadow-card)}
+.banner .b-ic{flex:0 0 auto;width:34px;height:34px;border-radius:50%;background:var(--cta);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:1.1rem;line-height:1}
+.banner .b-t{display:flex;flex-direction:column;gap:var(--s2);min-width:0}
+.banner .b-k{font-size:.66rem;font-weight:700;text-transform:uppercase;letter-spacing:.18em;color:var(--cta)}
+.banner p{color:var(--body);font-size:1rem;line-height:1.65;max-width:var(--measure)}
+.banner p strong{color:var(--text)}
+.banner mark{background:rgba(199,80,30,.16);color:var(--text);padding:.05em .3em;border-radius:5px;font-weight:600}
 </style>
 
 </head>
@@ -327,6 +334,15 @@ footer{padding-block:clamp(2.5rem,7vw,4rem) clamp(3.5rem,10vw,5.5rem);display:fl
   <div class="fee-row hi"><b>Pelo link</b><span class="v">940 €</span><small>taxa 6%</small><span class="g">+95 €</span></div>
   <p class="fee-foot">Piloto por convite. Valores reportados pelos anfitriões convidados.</p>
 </aside>
+</div>
+
+<div class="banner" role="note">
+  <span class="b-ic" aria-hidden="true">!</span>
+  <div class="b-t">
+    <span class="b-k">Ainda não está disponível para todos</span>
+    <p>Por agora, o link só chegou a alguns anfitriões convidados. <mark>O melhor que se pode fazer neste momento é usar o link de feedback direto da Airbnb e perguntar quando fica disponível para nós.</mark></p>
+    <p><strong>Quanto mais anfitriões o fizerem, mais a Airbnb percebe que há interesse.</strong> Utilizem.</p>
+  </div>
 </div>
 
 <div class="layout">
