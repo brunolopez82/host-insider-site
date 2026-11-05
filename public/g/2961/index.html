@@ -288,6 +288,9 @@ footer{padding-block:clamp(2.5rem,7vw,4rem) clamp(3.5rem,10vw,5.5rem);display:fl
 .as-badge__sub{font-size:12px;color:var(--body,#4A566E)}
 @media (max-width:760px){.close-cta .as-badge-wrap{order:-1}.as-badge{left:50%;transform:translateX(-50%);bottom:-18px}}
 @media (max-width:760px){.who{flex-direction:column;align-items:flex-start}.who .as-badge-wrap{margin-bottom:22px;justify-self:start}.who .as-badge{left:-6px;transform:none}}
+.why{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:var(--s2)}
+.why li{position:relative;padding-left:1.6rem;color:var(--body);font-size:.98rem;line-height:1.65}
+.why li::before{content:"";position:absolute;left:0;top:.62em;width:10px;height:10px;border-radius:3px;background:var(--cta)}
 </style>
 
 </head>
@@ -298,7 +301,7 @@ footer{padding-block:clamp(2.5rem,7vw,4rem) clamp(3.5rem,10vw,5.5rem);display:fl
   <div class="top-r">
     <button aria-expanded="false" aria-label="Nesta página" class="icbtn m-only" id="tocBtn" type="button"><svg viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h10"/></svg></button>
     <button aria-label="Mudar de tema" class="icbtn" id="themeBtn" type="button"><svg class="moon" viewBox="0 0 24 24"><path d="M20 14.5A8.5 8.5 0 019.5 4a8.5 8.5 0 1010.5 10.5z"/></svg><svg class="sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2M12 19.5v2M2.5 12h2M19.5 12h2M5.2 5.2l1.4 1.4M17.4 17.4l1.4 1.4M18.8 5.2l-1.4 1.4M6.6 17.4l-1.4 1.4"/></svg></button>
-    <a class="btn btn-cta" data-join href="#join" target="_blank" rel="noopener"><span class="cta-long">Experimentar 7 dias grátis</span><span class="cta-short">7 dias grátis</span></a>
+    <a class="btn btn-cta" data-join href="#join" target="_blank" rel="noopener"><span class="cta-long">Junte-se à comunidade</span><span class="cta-short">Junte-se</span></a>
   </div>
 </header>
 
@@ -310,7 +313,7 @@ footer{padding-block:clamp(2.5rem,7vw,4rem) clamp(3.5rem,10vw,5.5rem);display:fl
   <h1>Link de reserva direta:<br>taxa de 6%, mas com letra pequena</h1>
   <p class="lede">A Airbnb está a testar um link que baixa a taxa de serviço quando é o próprio anfitrião a trazer o hóspede. <strong>A poupança é real, mas a reserva continua a ser da Airbnb.</strong> Eis o que se sabe, as contas e o que continua igual.</p>
   <div class="byline"><img src="/images/avatar.webp" alt="Bruno, fundador da Anfitriões Sérios" width="48" height="48"><span class="byline-t"><b>Bruno</b>Fundador da Anfitriões Sérios · mais de 3 anos a ajudar anfitriões a lidar com problemas e a preparar-se para os evitar</span></div>
-  <div class="hero-cta"><a class="btn btn-cta btn-cta--lg" data-join href="#join" target="_blank" rel="noopener">Experimentar 7 dias grátis</a><span class="cta-note"><b>Sem qualquer compromisso.</b> Comunidade privada e exclusiva para anfitriões em Portugal e no Brasil.</span></div>
+  <div class="hero-cta"><a class="btn btn-cta btn-cta--lg" data-join href="#join" target="_blank" rel="noopener">Junte-se à comunidade</a><span class="cta-note">Comunidade privada e exclusiva para anfitriões em Portugal e no Brasil.</span></div>
   <div class="stats">
     <span class="stat"><b>15,5%</b><span>Taxa única<br>padrão</span></span>
     <span class="stat"><b>6–10%</b><span>Com o link,<br>segundo o reportado</span></span>
@@ -372,7 +375,7 @@ footer{padding-block:clamp(2.5rem,7vw,4rem) clamp(3.5rem,10vw,5.5rem);display:fl
 
 <aside class="mid-cta">
   <p>A Airbnb muda taxas, regras e funcionalidades com frequência, e nem sempre avisa com tempo. <span>Na Anfitriões Sérios, os membros ficam a par logo que a informação é pública, com o que fazer em cada caso.</span></p>
-  <a class="lnk" data-join href="#join" target="_blank" rel="noopener">Experimentar 7 dias grátis, sem compromisso <span aria-hidden="true">→</span></a>
+  <a class="lnk" data-join href="#join" target="_blank" rel="noopener">Junte-se à comunidade <span aria-hidden="true">→</span></a>
 </aside>
 
 <section id="s4" data-t="Poupar ou dar desconto">
@@ -427,28 +430,26 @@ footer{padding-block:clamp(2.5rem,7vw,4rem) clamp(3.5rem,10vw,5.5rem);display:fl
   <div class="acc" id="acc"></div>
 </section>
 
-<div class="close-cta v2" id="join">
+<div class="close-cta" id="join">
   <div class="txt">
-    <p class="eyebrow">Anfitriões Sérios</p>
-    <h2>Na próxima mudança, já se sabe o que fazer</h2>
-    <p class="intro">Uma comunidade privada e exclusiva para anfitriões Airbnb em Portugal e no Brasil. Sem drama e sem truques: informação clara e ajuda prática.</p>
-    <ul class="perks">
-      <li><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.2 4.2L19 7"/></svg><span><b>A par das mudanças da plataforma</b>, logo que a informação é pública, explicadas em português.</span></li>
-      <li><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.2 4.2L19 7"/></svg><span><b>O que fazer em cada caso</b>, e não apenas a notícia.</span></li>
-      <li><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.2 4.2L19 7"/></svg><span><b>Ajuda a otimizar o anúncio</b>, para ganhar visibilidade e potenciar mais reservas.</span></li>
-      <li><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.2 4.2L19 7"/></svg><span><b>Ajuda nas situações difíceis</b> com hóspedes, danos e avaliações.</span></li>
-      <li><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.2 4.2L19 7"/></svg><span><b>Cursos práticos</b> e anfitriões com a mesma mentalidade: soluções em vez de queixas.</span></li>
-    </ul>
-    <div class="act">
-      <a class="btn btn-cta btn-cta--lg" data-join href="#join" target="_blank" rel="noopener">Experimentar 7 dias grátis</a>
-      <p class="trial"><b>7 dias grátis, sem qualquer compromisso.</b> Durante o teste dá para ver a comunidade por dentro e, se não fizer sentido, cancelar antes do fim sem pagar nada.</p>
+    <p class="eyebrow">Comunidade privada</p>
+    <h2>Junte-se à nossa comunidade privada</h2>
+    <div class="prose">
+      <p><strong>Criei a Anfitriões Sérios para fugir aos grupos de Facebook</strong>, onde há muita informação, muita desinformação e pouca resposta concreta.</p>
+      <p>Como ex-colaborador do Airbnb, conheço a plataforma por dentro. Na comunidade ajudo-o diretamente com:</p>
     </div>
+    <ul class="why">
+      <li>Avaliações injustas e como responder</li>
+      <li>Danos e pedidos de reembolso</li>
+      <li>Comunicação com hóspedes difíceis</li>
+      <li>Um anúncio que gera mais reservas</li>
+    </ul>
+    <a class="btn btn-cta btn-cta--lg" data-join href="#join" target="_blank" rel="noopener">Junte-se à comunidade</a>
+    <p class="cta-note">Comunidade privada e exclusiva para anfitriões em Portugal e no Brasil.</p>
   </div>
-  <div class="who">
-    <div class="as-badge-wrap"><img class="photo" src="/images/avatar.webp" alt="Bruno, fundador da Anfitriões Sérios" width="240" height="240" loading="lazy"><div class="as-badge" role="note"><img class="as-badge__icon" src="/images/icone-distintivo.svg" alt="" width="24" height="24"><span class="as-badge__title">Ex-colaborador do Airbnb</span><span class="as-badge__sub">Hoje, ao lado dos anfitriões</span></div></div>
-    <div class="who-t"><q>Acompanho de perto os termos e as atualizações públicas da plataforma, para que os membros não tenham de o fazer sozinhos.</q><small>Bruno · fundador, mais de 3 anos a ajudar anfitriões</small></div>
-  </div>
+  <div class="as-badge-wrap"><img class="photo" src="/images/avatar.webp" alt="Bruno, fundador da Anfitriões Sérios" width="220" height="220" loading="lazy"><div class="as-badge" role="note"><img class="as-badge__icon" src="/images/icone-distintivo.svg" alt="" width="24" height="24"><span class="as-badge__title">Ex-colaborador do Airbnb</span><span class="as-badge__sub">Hoje, ao lado dos anfitriões</span></div></div>
 </div>
+
 
 <footer>
   <div class="hair"></div>
